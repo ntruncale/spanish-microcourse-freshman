@@ -1,0 +1,162 @@
+module.exports = {
+  num: 13, unit: 3, slug: "m13-preguntas", minutes: 40,
+  title: "Las preguntas",
+  subtitle: "Question words and how to ask questions",
+  lede: "Who, what, where, when, why, how? Spanish question words all carry an accent mark, and they put the verb right after them.",
+  recap: "Last time you learned the -er and -ir endings (*como, comes, come… vivo, vives, vive…*) and that they differ only in the nosotros and vosotros forms.",
+  context: {
+    title: "El mejor oficio del mundo",
+    place: "Aracataca, Colombia",
+    text: `**Gabriel García Márquez**, called **Gabo** across Latin America, grew up in the small Colombian town of Aracataca, listening to his grandparents' stories. Before he became a famous novelist, he worked for years as a newspaper reporter. He called journalism *el mejor oficio del mundo*: "the best job in the world."
+
+A reporter's job is to ask questions: {{¿Qué pasó? ¿Quién? ¿Dónde? ¿Cuándo? ¿Por qué?}} Gabo asked them of fishermen, soldiers and ordinary people, and he listened carefully to the answers.
+
+He later turned his grandparents' stories into a novel, *Cien años de soledad* (*One Hundred Years of Solitude*), about a magical town called Macondo. In **1982** he won the **Nobel Prize in Literature**. When he accepted it, he didn't wear a tuxedo. He wore a white *liqui-liqui*, a traditional suit from the Caribbean coast of Colombia.`
+  },
+  learn: [
+    {
+      title: "The question words",
+      text: `Every question word has an **accent mark**. Without the accent, *que* means *that* and *como* means *like*.`,
+      table: {
+        head: ["Spanish", "English", "Example"],
+        rows: [
+          ["{{¿Qué?}}", "What?", "{{¿Qué estudias?}}"],
+          ["{{¿Quién?}} · {{¿Quiénes?}}", "Who? (one · more than one)", "{{¿Quiénes son ellos?}}"],
+          ["{{¿Cuál?}} · {{¿Cuáles?}}", "Which? What?", "{{¿Cuál es tu clase favorita?}}"],
+          ["{{¿Cuándo?}}", "When?", "{{¿Cuándo es el examen?}}"],
+          ["{{¿Dónde?}}", "Where?", "{{¿Dónde vives?}}"],
+          ["{{¿De dónde?}}", "From where?", "{{¿De dónde eres?}}"],
+          ["{{¿Adónde?}}", "(To) where?", "{{¿Adónde vas?}}"],
+          ["{{¿Cómo?}}", "How?", "{{¿Cómo estás?}}"],
+          ["{{¿Cuánto?}} · {{¿Cuánta?}}", "How much?", "{{¿Cuánto cuesta?}}"],
+          ["{{¿Cuántos?}} · {{¿Cuántas?}}", "How many?", "{{¿Cuántas clases tienes?}}"],
+          ["{{¿Por qué?}}", "Why? (two words)", "{{¿Por qué estudias español?}}"]
+        ],
+        caption: "The answer to *¿Por qué?* (why) is **porque** (because): one word, no accent. *Cuánto* matches the noun: *cuántos chicos, cuántas chicas*."
+      }
+    },
+    {
+      title: "Word order in questions",
+      text: `With a question word, the **verb comes right after it**, and the subject (if you say it) comes after the verb: {{¿Dónde vive tu abuela?}} (*Where does your grandmother live?*) English needs *does*; Spanish doesn't.
+
+For a **yes / no question**, you can just raise your voice at the end, or put the verb first:`,
+      examples: [
+        ["¿Ana habla francés?", "Does Ana speak French? (voice goes up)"],
+        ["¿Habla Ana francés?", "Does Ana speak French? (verb first)"],
+        ["Eres de aquí, ¿verdad?", "You're from here, right?"],
+        ["Hoy hay examen, ¿no?", "There's a test today, isn't there?"]
+      ]
+    },
+    {
+      title: "¿Qué o cuál?",
+      text: `Both can mean *what*, but they aren't the same:
+- **¿Qué es…?** asks for a **definition**: {{¿Qué es un liqui-liqui?}} (*What is a liqui-liqui?*)
+- **¿Cuál es…?** asks you to **pick one** from many: {{¿Cuál es tu número de teléfono?}} {{¿Cuál es la capital de Colombia?}}
+- **¿Qué** + noun? is normal: {{¿Qué libro lees?}} (*What book are you reading?*)`,
+      tip: "*What is your name?* is **¿Cómo te llamas?**, literally *How do you call yourself?*, or **¿Cuál es tu nombre?** Never *¿Qué es tu nombre?*"
+    }
+  ],
+  tasks: [
+    {
+      id: "t1", type: "match", title: "Question and answer",
+      intro: "Match each question (tap to hear it) with its answer.",
+      left: "Pregunta", right: "Respuesta",
+      pairs: [["¿Dónde vives?", "En Scranton."], ["¿Cuándo es tu cumpleaños?", "El tres de mayo."], ["¿Quién es tu profesora?", "La señora Ruiz."], ["¿Cuántos hermanos tienes?", "Dos."], ["¿Por qué estudias?", "Porque hay examen."], ["¿Cómo estás?", "Muy bien."], ["¿De dónde eres?", "De Colombia."], ["¿Qué comes?", "Una manzana."]],
+      hints: ["Look for the key word: *dónde* → a place, *cuándo* → a time, *quién* → a person."]
+    },
+    {
+      id: "t2", type: "select", title: "Choose the question word",
+      intro: "Each answer is given. Choose the question word that fits.",
+      items: [
+        { s: "¿{Dónde|Cuándo|Quién} vive Gabo? ((En Colombia.))" }, { s: "¿{Cuándo|Dónde|Cómo} es la clase? ((A las dos.))" },
+        { s: "¿{Quiénes|Quién|Qué} son ellos? ((Mis primos.))" }, { s: "¿{Cuántas|Cuántos|Cuánto} clases tienes? ((Siete.))" },
+        { s: "¿{Por qué|Porque|Qué} lees ese libro? ((Porque es interesante.))" }, { s: "¿{Cuál|Qué|Quién} es tu color favorito? ((El verde.))" },
+        { s: "¿{De dónde|Dónde|Adónde} eres? ((Soy de Perú.))" }, { s: "¿{Cómo|Qué|Cuál} te llamas? ((Me llamo Sara.))" }
+      ],
+      hints: ["*Quiénes* for more than one person; *cuántas* for a feminine plural noun (*clases*).", "Origin (*soy de…*) needs **de dónde**."]
+    },
+    {
+      id: "t3", type: "cloze", title: "Write the question word",
+      intro: "Write the missing question word, with its accent mark.",
+      items: [
+        "¿[Cuántos] hermanos tienes? — Tengo tres.", "¿[Cuántas] personas hay en la clase? — Veinte.", "¿[Quiénes] son tus amigos? — Ana y Luis.",
+        "¿[Cuál] es tu número de teléfono?", "¿[Por qué] estudias español? — [Porque] es bonito.", "¿[Qué] es un liqui-liqui? — Es un traje.",
+        "¿[Adónde] vas? — A la biblioteca."
+      ],
+      hints: ["*Cuántos* + masculine noun, *cuántas* + feminine noun.", "*Why* is two words with an accent (**por qué**); *because* is one word, no accent (**porque**).", "Definition → **qué**. Pick one → **cuál**."]
+    },
+    {
+      id: "t4", type: "listen", title: "Answer the question",
+      intro: "Listen to each question. Which answer makes sense?",
+      questions: [
+        { say: "¿Dónde está la biblioteca?", choices: [["Al lado de la cafetería.", true], ["A las tres.", false], ["Porque es grande.", false], ["Muy bien, gracias.", false]] },
+        { say: "¿A qué hora es el partido?", choices: [["A las siete.", true], ["En el parque.", false], ["Con mis amigos.", false], ["Es mi hermano.", false]] },
+        { say: "¿Quién es tu mejor amigo?", choices: [["Se llama Tomás.", true], ["Es el lunes.", false], ["Tengo dos.", false], ["En Scranton.", false]] },
+        { say: "¿Por qué estás cansado?", choices: [["Porque corro mucho.", true], ["Mañana.", false], ["Estoy en casa.", false], ["Sí, gracias.", false]] },
+        { say: "¿Cuántos años tienes?", choices: [["Tengo catorce años.", true], ["Tengo dos hermanos.", false], ["Es el catorce de mayo.", false], ["Son las dos.", false]] }
+      ],
+      hints: ["Catch the question word first, then think: what kind of answer does it ask for?"]
+    },
+    {
+      id: "t5", type: "order", title: "Build the questions",
+      intro: "Tap the words in order. The verb comes right after the question word.",
+      items: [
+        { en: "Where does your grandmother live?", es: "¿Dónde vive tu abuela?" },
+        { en: "What are you reading?", es: "¿Qué lees?", alt: ["¿Qué lees tú?"] },
+        { en: "When is the test?", es: "¿Cuándo es el examen?" },
+        { en: "How many students are there?", es: "¿Cuántos estudiantes hay?" },
+        { en: "Why do you study Spanish?", es: "¿Por_qué estudias español?", extra: ["porque"] }
+      ],
+      hints: ["Question word → verb → the rest.", "*Why* is **por qué**; *porque* means *because*."]
+    },
+    {
+      id: "t6", type: "errors", title: "Fix the questions",
+      intro: "Each question has one mistake. Tap it, then type the correct word.",
+      items: [
+        { s: "¿Donde está el baño?", bad: "Donde", fix: "Dónde" },
+        { s: "¿Que hora es?", bad: "Que", fix: "Qué" },
+        { s: "¿Quién son tus padres?", bad: "Quién", fix: "Quiénes", why: "Two people: **quiénes**." },
+        { s: "¿Cuántos hermanas tienes?", bad: "Cuántos", fix: "Cuántas" },
+        { s: "¿Qué es tu número de teléfono?", bad: "Qué", fix: "Cuál", why: "Picking one from many: **cuál**." }
+      ],
+      hints: ["Check accent marks, singular vs. plural, and *qué* vs. *cuál*."]
+    },
+    {
+      id: "s1", type: "speak", title: "Ask out loud",
+      intro: "Listen to how the voice rises or falls, then record.",
+      items: [{ s: "¿Hablas español?" }, { s: "¿Dónde vives?" }, { s: "Eres de aquí, ¿verdad?" }]
+    }
+  ],
+  build: {
+    heading: "Una entrevista",
+    prompt: `You're a reporter like Gabo. Choose a person you'd love to interview (a famous person, a saint, an athlete, someone in your family). Write **at least 6 questions** for them, using at least **5 different question words**.`,
+    model: `{{Entrevista con Roberto Clemente.}} {{¿De dónde es usted?}} {{¿Cuándo es su cumpleaños?}} {{¿Cuántos hermanos tiene?}} {{¿Por qué ayuda a los niños?}} {{¿Cuál es su comida favorita?}} {{¿Quién es su héroe?}}`,
+    placeholder: "Entrevista con…",
+    reqs: [
+      { t: "At least 6 questions with **¿ ?**", questions: 6 },
+      { t: "Five different question words", min: 5, any: ["qué", "quién", "quiénes", "cuál", "cuáles", "cuándo", "dónde", "de dónde", "adónde", "cómo", "cuánto", "cuánta", "cuántos", "cuántas", "por qué"] }
+    ]
+  },
+  reflect: {
+    q: "Gabo became a great writer by asking people questions and really listening to their answers. What is one question you'd like to ask an older person in your family or community? Why do you want to know the answer?",
+    placeholder: "I would like to ask…"
+  },
+  further: {
+    id: "x1", type: "translate", title: "Challenge: ask in Spanish",
+    items: [
+      { en: "Where are you from?", es: ["¿de dónde eres [tú]?", "¿de dónde es usted?"] },
+      { en: "Which is your class?", es: ["¿cuál es tu clase?"] },
+      { en: "How many cousins do you have?", es: ["¿cuántos primos tienes [tú]?", "¿cuántas primas tienes [tú]?"] },
+      { en: "Who are they?", es: ["¿quiénes son [ellos]?", "¿quiénes son ellas?"] }
+    ]
+  },
+  culture: "**¿Sabías?** *Macondo*, Gabo's imaginary town, inspired the idea of **magical realism**: stories where amazing things, like a rain of yellow flowers, happen as if they were completely normal.",
+  teacher: {
+    snags: [
+      ["Task 2", "*Porque* for *why*", "*Why* is two words with an accent: *por qué*."],
+      ["Task 3", "*Cuántos personas*", "*Persona* is feminine: *cuántas*."],
+      ["Task 6", "Doesn't see *¿Qué es tu número?*", "Read Idea 3: definition or pick one?"]
+    ],
+    factcheck: "García Márquez was born in Aracataca in 1927; he worked as a journalist for *El Universal*, *El Heraldo* and *El Espectador*; he called journalism *el mejor oficio del mundo* in a 1996 speech. *Cien años de soledad* (1967); Nobel Prize in Literature 1982, accepted in a liqui-liqui."
+  }
+};

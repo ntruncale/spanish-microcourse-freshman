@@ -1,0 +1,187 @@
+module.exports = {
+  num: 1, unit: 1, slug: "m01-alfabeto", minutes: 40,
+  title: "El alfabeto y los sonidos",
+  subtitle: "The Spanish alphabet and its sounds",
+  lede: "Spanish is spelled almost exactly the way it sounds. Learn the 5 vowels and a handful of special letters, and you can read any word out loud.",
+  welcome: `<h2>Bienvenidos a Español 9: Gramática</h2>
+<ul>
+<li>You'll do <b>one module each week</b>, 30 in all. Work through the 7 steps from top to bottom.</li>
+<li>Tap any <b>🔊</b> to hear Spanish. Pick a voice from <b>España</b> or <b>Latinoamérica</b> above, and use <b>🐢</b> to hear it slowly.</li>
+<li>When you type Spanish, use the yellow <b>á é í ó ú ü ñ ¿ ¡</b> keys, or hold a letter down on the iPad keyboard.</li>
+<li>The activities <b>check your work automatically</b>. If you're stuck, tap <b>Show a hint</b>.</li>
+<li>When every activity is done, you get a <b>completion code</b>. Enter it in the Blackbaud check with a short quiz. That's how you pass.</li>
+<li>Your progress saves on this iPad, so you can stop and come back.</li>
+</ul>`,
+  context: {
+    title: "Escribir como pronunciamos",
+    place: "Salamanca, España",
+    text: `In **1492**, a professor at the University of Salamanca named **Antonio de Nebrija** published the *Gramática de la lengua castellana*. It was the first grammar book ever written for a modern European language. Before Nebrija, scholars only wrote grammars of Latin and Greek.
+
+Nebrija had a simple rule for spelling: **we should write the way we speak, and speak the way we write.** Spanish still mostly follows his rule. In English, *though*, *through* and *tough* all look alike but sound different. In Spanish, once you know the sounds, you can read a word you've never seen, and spell a word you've only heard.
+
+Today about 500 million people speak Spanish as their first language. Every one of them uses the same five vowel sounds you'll learn today: {{a, e, i, o, u}}.`
+  },
+  learn: [
+    {
+      title: "Five vowels, five clear sounds",
+      text: `English vowels change sound all the time (think of the *a* in *cat*, *car* and *cake*). Spanish vowels **always** sound the same, and they're short and clean.`,
+      table: {
+        head: ["Vowel", "Sounds like", "Example"],
+        rows: [
+          ["**a**", "*a* in *father*", "{{casa}} (house)"],
+          ["**e**", "*e* in *bet*", "{{mesa}} (table)"],
+          ["**i**", "*ee* in *see*", "{{sí}} (yes)"],
+          ["**o**", "*o* in *open*, but shorter", "{{oso}} (bear)"],
+          ["**u**", "*oo* in *moon*", "{{uva}} (grape)"]
+        ]
+      },
+      tip: "Say every vowel in a word, even at the end: {{noche}} is *NO-che*, not *notch*."
+    },
+    {
+      title: "The alphabet has 27 letters",
+      text: `The Spanish alphabet has one letter English doesn't: **ñ** (*eñe*). Tap 🔊 to hear the name of each letter. You'll use these names to spell words out loud, for example when you tell someone how to write your name.`,
+      table: {
+        head: ["Letter", "Name", "Letter", "Name", "Letter", "Name"],
+        rows: [
+          ["**A**", "{{a}}", "**J**", "{{jota}}", "**R**", "{{erre}}"],
+          ["**B**", "{{be}}", "**K**", "{{ka}}", "**S**", "{{ese}}"],
+          ["**C**", "{{ce}}", "**L**", "{{ele}}", "**T**", "{{te}}"],
+          ["**D**", "{{de}}", "**M**", "{{eme}}", "**U**", "{{u}}"],
+          ["**E**", "{{e}}", "**N**", "{{ene}}", "**V**", "{{uve}}"],
+          ["**F**", "{{efe}}", "**Ñ**", "{{eñe}}", "**W**", "{{uve doble}}"],
+          ["**G**", "{{ge}}", "**O**", "{{o}}", "**X**", "{{equis}}"],
+          ["**H**", "{{hache}}", "**P**", "{{pe}}", "**Y**", "{{ye}}"],
+          ["**I**", "{{i}}", "**Q**", "{{cu}}", "**Z**", "{{zeta}}"]
+        ],
+        caption: "**ch** and **ll** are pairs of letters, not separate letters. **Y** is also called *i griega* (\"Greek i\")."
+      }
+    },
+    {
+      title: "The letters that surprise English speakers",
+      text: `Most consonants sound about the same as in English. These are the ones to watch:`,
+      table: {
+        head: ["Letters", "Sound", "Examples"],
+        rows: [
+          ["**h**", "always silent", "{{hola}} · {{hora}}"],
+          ["**j**, and **g** before *e* or *i*", "a breathy *h*, from the back of the throat", "{{jugo}} · {{gente}} · {{girasol}}"],
+          ["**g** everywhere else", "*g* in *go*", "{{gato}} · {{gracias}}"],
+          ["**gu** before *e* or *i*", "*g* in *go* (the *u* is silent)", "{{guitarra}} · {{guerra}}"],
+          ["**qu**", "*k* (the *u* is silent)", "{{queso}} · {{química}}"],
+          ["**c** before *e* or *i*, and **z**", "*th* in *think* in most of Spain; *s* in Latin America", "{{cine}} · {{zapato}}"],
+          ["**ll** and **y**", "*y* in *yes* (in many places, closer to *j* in *jam*)", "{{llama}} · {{yo}}"],
+          ["**ñ**", "*ny* in *canyon*", "{{niño}} · {{mañana}}"],
+          ["**r** between vowels", "a quick tap, like *tt* in *butter*", "{{pero}} · {{cara}}"],
+          ["**rr**, and **r** at the start of a word", "a rolled, trilled *r*", "{{perro}} · {{rosa}}"],
+          ["**b** and **v**", "the same sound", "{{vaca}} · {{boca}}"]
+        ]
+      },
+      tip: "Switch the voice between **España** and **Latinoamérica** and listen to {{cine}} and {{zapato}}. Both are correct Spanish; they're just different accents."
+    }
+  ],
+  tasks: [
+    {
+      id: "t1", type: "match", title: "Letter names",
+      intro: "Tap a letter name on the left (you'll hear it), then tap the letter it names.",
+      left: "Name", right: "Letter",
+      pairs: [["hache", "H"], ["jota", "J"], ["eñe", "Ñ"], ["uve", "V"], ["be", "B"], ["zeta", "Z"], ["equis", "X"], ["ge", "G"], ["erre", "R"], ["cu", "Q"]],
+      hints: ["Look at the alphabet table in Idea 2.", "*Jota* is the letter whose sound is like a breathy *h*. *Hache* is the silent letter."]
+    },
+    {
+      id: "t2", type: "listen", title: "Which word did you hear?",
+      intro: "Listen carefully. These words differ by just one sound.",
+      questions: [
+        { say: "perro", q: "Which word did you hear?", keepOrder: true, choices: [["perro (dog)", true, "The rolled **rr**."], ["pero (but)", false, "Listen for the long, rolled *rr*."]] },
+        { say: "pero", q: "Which word did you hear?", keepOrder: true, choices: [["perro (dog)", false, "Listen again: is the *r* a quick tap or a long roll?"], ["pero (but)", true, "A quick tap: **r**."]] },
+        { say: "piso", choices: [["piso (floor)", true, "**i** sounds like *ee*."], ["peso (weight)", false], ["paso (step)", false], ["puso (put)", false]] },
+        { say: "masa", choices: [["masa (dough)", true, "Both vowels are **a**."], ["mesa (table)", false], ["misa (Mass)", false], ["musa (muse)", false]] },
+        { say: "carro", q: "Which word did you hear?", keepOrder: true, choices: [["caro (expensive)", false, "Listen for the roll."], ["carro (car)", true, "The rolled **rr**."]] }
+      ],
+      hints: ["Tap 🐢 to hear it slowly.", "Spanish vowels never change: **a** *ah*, **e** *eh*, **i** *ee*, **o** *oh*, **u** *oo*."]
+    },
+    {
+      id: "t3", type: "sort", title: "Two sounds of G",
+      intro: "Tap 🔊 to hear each word. Does the **g** sound like the *g* in *go*, or like the Spanish **j**?",
+      cats: ["like *g* in *go*", "like Spanish **j**"], speak: true,
+      items: [["gato", 0], ["gol", 0], ["guitarra", 0], ["agua", 0], ["gracias", 0], ["amigo", 0],
+              ["gente", 1], ["girasol", 1], ["general", 1], ["página", 1], ["mágico", 1], ["gimnasio", 1]],
+      hints: ["Look at the letter right after the **g**.", "**g** + *e* or *i* sounds like **j**. Everywhere else (and in **gu**), it's the *g* in *go*."]
+    },
+    {
+      id: "t4", type: "cloze", title: "Spell it",
+      intro: "Each word is missing a letter or two. Use the rules from Idea 3 and the clue to fill them in.",
+      items: [
+        { s: "[qu]eso ((cheese: a *k* sound before *e*))" },
+        { s: "[c]asa ((house: a *k* sound before *a*))" },
+        { s: "[gu]itarra ((guitar: the *g* in *go* before *i*))" },
+        { s: "[h]ola ((hello: a silent letter))" },
+        { s: "ni[ñ]o ((boy: the *ny* sound))" },
+        { s: "pe[rr]o ((dog: a rolled *r*))" },
+        { s: "[z]apato ((shoe: the *th* / *s* sound before *a*))" },
+        { s: "[c]ine ((movie theater: the *th* / *s* sound before *i*))" }
+      ],
+      hints: ["Before **e** or **i**, the *k* sound is spelled **qu**. Before **a**, **o**, **u**, it's **c**.", "Before **e** or **i**, the *g*-in-*go* sound is spelled **gu**.", "The *th* / *s* sound is **c** before *e* or *i*, and **z** before *a*, *o*, *u*."]
+    },
+    {
+      id: "t5", type: "dictation", title: "Listen and write",
+      intro: "Listen and write each word or phrase. Use the yellow keys for **ñ** and accent marks.",
+      pick: 5,
+      items: ["hola", "el queso", "la guitarra", "mañana", "el perro", "la gente", "el zapato"],
+      hints: ["Remember the silent **h** in *hola*.", "*Queso* and *guitarra* have a silent **u**.", "*Mañana* has one **ñ**, in the middle: *ma-ña-na*."]
+    },
+    {
+      id: "t6", type: "quiz", title: "Sound rules",
+      questions: [
+        { q: "Which letter is always silent in Spanish?", choices: [["h", true, "*Hola* sounds like *ola*."], ["j", false, "The **j** is a breathy *h* sound."], ["u", false, "**u** is only silent in *qu* and *gu* before *e* or *i*."], ["ll", false]] },
+        { q: "How many vowel sounds does Spanish have?", choices: [["5", true, "a, e, i, o, u, and they never change."], ["10", false], ["12", false], ["20", false]] },
+        { q: "In *girasol*, the **g** sounds like…", choices: [["the Spanish **j**", true, "**g** before *i* or *e* sounds like **j**."], ["the *g* in *go*", false], ["the *y* in *yes*", false], ["nothing; it's silent", false]] },
+        { q: "Which pair of letters sounds exactly the same in Spanish?", choices: [["b and v", true, "*Vaca* and *boca* start with the same sound."], ["r and rr", false], ["c and ch", false], ["n and ñ", false]] },
+        { q: "In most of Spain, the **z** in *zapato* sounds like…", choices: [["*th* in *think*", true, "In Latin America it sounds like *s*. Both are correct."], ["*z* in *zoo*", false], ["*ts* in *cats*", false], ["*h* in *hot*", false]] }
+      ]
+    },
+    {
+      id: "s1", type: "speak", title: "Trabalenguas: tongue twisters",
+      intro: "Listen, then try to say each one. Record yourself and compare.",
+      items: [
+        { s: "Erre con erre guitarra, erre con erre barril.", en: "R with R, guitar; R with R, barrel." },
+        { s: "Tres tristes tigres tragaban trigo en un trigal.", en: "Three sad tigers swallowed wheat in a wheat field." },
+        { s: "Rápido ruedan los carros del ferrocarril.", en: "Fast roll the railroad cars." }
+      ]
+    }
+  ],
+  build: {
+    heading: "¿Cómo se escribe tu nombre?",
+    prompt: `Introduce yourself and spell your first and last name using the **Spanish letter names**, the way you would on the phone. Separate the letters with commas.`,
+    model: `{{¡Hola! Me llamo Carmen López.}} {{Mi nombre se escribe: ce, a, erre, eme, e, ene.}} {{Mi apellido se escribe: ele, o, pe, e, zeta.}}`,
+    placeholder: "¡Hola! Me llamo…",
+    reqs: [
+      { t: "A greeting (*Hola*, *Buenos días*…)", any: ["hola", "buenos días", "buenas tardes", "buenas noches"] },
+      { t: "Your name with **Me llamo…**", any: ["me llamo"] },
+      { t: "The phrase **se escribe**", any: ["se escribe"] },
+      { t: "At least 4 different letter names", any: ["be", "ce", "de", "efe", "ge", "hache", "jota", "ka", "ele", "eme", "ene", "eñe", "pe", "cu", "erre", "ese", "te", "uve", "uve doble", "equis", "ye", "i griega", "zeta"], min: 4 }
+    ]
+  },
+  reflect: {
+    q: "Nebrija believed words should be written the way people really say them. Think about your own name. Has anyone ever said it or spelled it wrong? How does it feel when someone takes the time to say your name the right way, and why might that matter to someone who is new here?",
+    placeholder: "When someone says my name…"
+  },
+  further: {
+    id: "x1", type: "listen", title: "Challenge: spelled out loud",
+    intro: "Each word is spelled out letter by letter. Which word is it?",
+    questions: [
+      { say: "ge, a, te, o", choices: [["gato", true], ["pato", false], ["gota", false], ["jato", false]] },
+      { say: "hache, o, ele, a", choices: [["hola", true], ["ola", false], ["hora", false], ["olla", false]] },
+      { say: "eme, a, eñe, a, ene, a", choices: [["mañana", true], ["manzana", false], ["campana", false], ["semana", false]] },
+      { say: "cu, u, e, ese, o", choices: [["queso", true], ["peso", false], ["beso", false], ["quiso", false]] }
+    ]
+  },
+  culture: "**¿Sabías?** The letter **ñ** began as a scribe's shortcut. Medieval writers saved space by writing *nn* as an *n* with a small *n* on top. Over time, the little *n* became the wavy line called a *tilde*.",
+  teacher: {
+    snags: [
+      ["Task 1", "Mixes up *hache* and *jota*", "Which letter is silent? Which one sounds like a breathy *h*?"],
+      ["Task 2", "Can't hear *pero* vs. *perro*", "Use 🐢. The rolled *rr* lasts much longer."],
+      ["Task 4", "Writes *k* for *queso*", "Spanish only uses *k* in a few borrowed words. Which two letters make the *k* sound before *e*?"],
+      ["Task 5", "Writes *manana*", "The yellow box means the letters are right except ñ. Use the yellow **ñ** key."]
+    ],
+    factcheck: "Nebrija's *Gramática de la lengua castellana* was printed in Salamanca in 1492 and is usually called the first grammar of a modern European language. The spelling principle (write as we pronounce) appears in the Gramática and in his later *Reglas de ortografía* (1517). Speaker numbers: Instituto Cervantes reports roughly 500 million native speakers. Since 2010 the RAE counts 27 letters; *ch* and *ll* are digraphs. The ñ-from-nn origin is standard."
+  }
+};

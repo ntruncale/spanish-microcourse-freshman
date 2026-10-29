@@ -1,0 +1,155 @@
+module.exports = {
+  num: 10, unit: 2, slug: "m10-familia-posesivos", minutes: 45,
+  title: "La familia, hay y los posesivos",
+  subtitle: "Family words, there is / there are, and my, your, his, our",
+  lede: "Spanish has no *'s*. To say whose something is, you use possessive words like *mi* and *nuestro*, or the little word *de*.",
+  recap: "Last time you made adjectives agree with their nouns (**las flores amarillas**) and learned where they go in a sentence.",
+  context: {
+    title: "Las Meninas",
+    place: "Museo del Prado, Madrid",
+    text: `In **1656**, the painter **Diego Velázquez** finished one of the most famous paintings in the world, **Las Meninas** (*The Ladies-in-Waiting*). In the middle stands the little princess, the **Infanta Margarita**, five years old, surrounded by her maids, a dog, and members of the royal household.
+
+Look closely, and you'll find Velázquez himself on the left, standing at a huge canvas with his brush. And in a small mirror on the back wall are two blurry faces: the princess's **father and mother**, King Philip IV and Queen Mariana. Are they standing where *you* are, looking in? People have argued about this painting for over 350 years.
+
+It's a family portrait with a twist. In Spanish you could say: {{En el cuadro hay muchas personas. La niña es la hija del rey. Sus padres están en el espejo.}}`
+  },
+  learn: [
+    {
+      title: "La familia",
+      text: `Tap each card. A masculine plural can mean a mixed group: **los padres** = *parents*, **los hermanos** = *brothers and sisters*.`,
+      flash: [
+        ["el padre · la madre", "father · mother"], ["los padres", "parents"], ["el hermano · la hermana", "brother · sister"], ["los hermanos", "siblings"],
+        ["el abuelo · la abuela", "grandfather · grandmother"], ["el tío · la tía", "uncle · aunt"], ["el primo · la prima", "cousin"], ["el hijo · la hija", "son · daughter"],
+        ["el esposo · la esposa", "husband · wife"], ["el sobrino · la sobrina", "nephew · niece"], ["el padrastro · la madrastra", "stepfather · stepmother"], ["la mascota", "pet"]
+      ]
+    },
+    {
+      title: "Possessive adjectives: whose is it?",
+      text: `Possessive adjectives go **before** the noun and match **the thing owned**, not the owner. *Mi* becomes **mis** for more than one thing; *nuestro* and *vuestro* also change for gender.`,
+      table: {
+        head: ["Owner", "One thing", "More than one"],
+        rows: [
+          ["my", "{{mi hermano}}", "{{mis hermanos}}"],
+          ["your (tú)", "{{tu prima}}", "{{tus primas}}"],
+          ["his, her, its, your (usted)", "{{su perro}}", "{{sus perros}}"],
+          ["our", "{{nuestro tío}} · {{nuestra tía}}", "{{nuestros tíos}} · {{nuestras tías}}"],
+          ["your (vosotros)", "{{vuestro abuelo}} · {{vuestra abuela}}", "{{vuestros abuelos}} · {{vuestras abuelas}}"],
+          ["their, your (ustedes)", "{{su casa}}", "{{sus casas}}"]
+        ]
+      },
+      tip: "*Nuestra casa* (our house): *nuestra* is feminine because **casa** is feminine, even if the owners are boys. And **tu** (your) has no accent; **tú** (you) does."
+    },
+    {
+      title: "*De* for possession, and *hay*",
+      text: `Spanish has no *'s*. Instead, say *the dog **of** Ana*: {{el perro de Ana}}. If *su* is unclear, *de* helps: {{la casa de ella}} (*her house*).
+
+**Hay** means *there is* or *there are*, for one thing or many: {{Hay un gato.}} {{Hay cinco personas en mi familia.}} To ask *how many*: {{¿Cuántas personas hay en tu familia?}} To say *there isn't*: {{No hay perros en la foto.}}`,
+      tip: "*De* + *el* combines into **del**: {{la hija del rey}} (*the king's daughter*). *De la* doesn't change."
+    }
+  ],
+  tasks: [
+    {
+      id: "t1", type: "match", title: "La familia",
+      intro: "Tap a Spanish word (you'll hear it), then its meaning.",
+      pairs: [["la abuela", "grandmother"], ["el tío", "uncle"], ["la prima", "cousin (female)"], ["los padres", "parents"], ["el hermano", "brother"], ["la hija", "daughter"], ["la esposa", "wife"], ["el sobrino", "nephew"], ["la mascota", "pet"]],
+      hints: ["*Padres* looks like *fathers*, but it usually means *parents*."]
+    },
+    {
+      id: "t2", type: "select", title: "Choose the possessive",
+      intro: "Choose the word that matches the noun.",
+      items: [
+        { s: "{mis|mi} hermanos ((my))" }, { s: "{Nuestra|Nuestro|Nuestras} casa es pequeña. ((our))" }, { s: "{tus|tu} primas ((your))" },
+        { s: "Ana y {sus|su} padres ((her))" }, { s: "{nuestros|nuestro|nuestras} abuelos ((our))" }, { s: "Señor López, ¿es {su|tu} hijo? ((your, formal))" },
+        { s: "{mi|mis} familia ((my))", why: "*Familia* is one group, so **mi**." }, { s: "{vuestras|vuestros|vuestra} tías ((your, vosotros))" }
+      ],
+      hints: ["Look at the noun after the blank, not at the owner.", "Formal *your* (usted) is **su**."]
+    },
+    {
+      id: "t3", type: "cloze", title: "Write the possessive",
+      intro: "Write the Spanish word for the English one in parentheses.",
+      items: [
+        "[nuestros] ((our)) abuelos", "[mis] ((my)) tías", "[tu] ((your, tú)) perro", "[sus] ((their)) padres",
+        "[nuestra] ((our)) familia", "[su] ((his)) hermana", "[su] ((your, usted)) hijo", "[vuestra] ((your, vosotros)) casa"
+      ],
+      hints: ["**su / sus** can mean *his, her, its, their* or formal *your*.", "*Nuestro* changes for gender: *nuestra familia*, *nuestros abuelos*."]
+    },
+    {
+      id: "t4", type: "read", title: "La familia de Elena",
+      intro: "Read (and listen to) Elena's description of her family, then answer the questions.",
+      passage: `{{Me llamo Elena. En mi familia hay cinco personas: mi padre, mi madre, mis dos hermanos y yo.}} {{Mi padre se llama Jorge y es de Cuba. Mi madre se llama Ana.}} {{Mis hermanos se llaman Luis y Tomás.}} {{En casa también hay una mascota: nuestro perro, Coco.}}
+
+{{Los padres de mi madre son mis abuelos, Pedro y Carmen.}} {{Mi tía Rosa es la hermana de mi padre. Sus hijos, Marta y Sergio, son mis primos.}}`,
+      questions: [
+        { q: "How many people are in Elena's family?", choices: [["five", true], ["four", false], ["six", false], ["three", false]] },
+        { q: "Who is from Cuba?", choices: [["her father", true], ["her mother", false], ["her grandparents", false], ["her aunt", false]] },
+        { q: "Who is Coco?", choices: [["the family dog", true], ["Elena's cousin", false], ["Elena's sister", false], ["the family cat", false]] },
+        { q: "Pedro and Carmen are…", choices: [["her mother's parents", true], ["her father's parents", false], ["her aunt and uncle", false], ["her cousins", false]] },
+        { q: "Whose children are Marta and Sergio?", choices: [["Aunt Rosa's", true], ["Jorge's", false], ["Pedro's", false], ["Ana's", false]] }
+      ],
+      hints: ["*Los padres de mi madre* = *my mother's parents*.", "*Sus hijos* here = *her children* (Rosa's)."]
+    },
+    {
+      id: "t5", type: "translate", title: "Whose is it?",
+      intro: "Translate. Remember: no *'s* in Spanish.",
+      items: [
+        { en: "Ana's dog", es: ["el perro de ana"] },
+        { en: "my brother's friends", es: ["los amigos de mi hermano"] },
+        { en: "There are four people in my family.", es: ["hay cuatro personas en mi familia", "en mi familia hay cuatro personas"] },
+        { en: "There isn't a cat.", es: ["no hay [un] gato"] },
+        { en: "Our cousins are from Texas.", es: ["nuestros primos son de texas", "nuestras primas son de texas"] }
+      ],
+      hints: ["*X's Y* → **el Y de X**.", "*There is / there are* → **hay**. *There isn't* → **no hay**."]
+    },
+    {
+      id: "t6", type: "errors", title: "Fix the mistakes",
+      intro: "Tap the wrong word, then type the correct one.",
+      items: [
+        { s: "Mis hermana es alta.", bad: "Mis", fix: "Mi" },
+        { s: "Nuestro familia es grande.", bad: "Nuestro", fix: "Nuestra" },
+        { s: "Su padres son de Cuba.", bad: "Su", fix: "Sus" },
+        { s: "Mis primos son nuestro amigos.", bad: "nuestro", fix: "nuestros" },
+        { s: "¿Cuántos personas hay en tu familia?", bad: "Cuántos", fix: "Cuántas", why: "*Personas* is feminine." }
+      ],
+      hints: ["Each possessive must match the noun right after it."]
+    },
+    {
+      id: "s1", type: "speak", title: "Talk about your family",
+      intro: "Listen, record, compare.",
+      items: [{ s: "En mi familia hay cuatro personas." }, { s: "Mi abuela es la madre de mi padre." }, { s: "Nuestro perro se llama Max." }]
+    }
+  ],
+  build: {
+    heading: "Mi familia",
+    prompt: `Describe your family, or a family from a book, show or movie. Write **at least 6 sentences**. Say how many people there are with **hay**, use at least **three different possessives** (*mi, mis, su, nuestro…*), at least **four family words**, and at least one **de** for possession.`,
+    model: `{{En mi familia hay cinco personas.}} {{Mis padres se llaman Carlos y Julia.}} {{Mi hermana es simpática y mi hermano es muy gracioso.}} {{Nuestra casa es pequeña pero bonita.}} {{La hermana de mi madre es mi tía Laura.}} {{Sus hijos son mis primos favoritos.}}`,
+    placeholder: "En mi familia hay…",
+    reqs: [
+      { t: "At least 6 sentences", sentences: 6 },
+      { t: "**hay** to count people or things", any: ["hay"] },
+      { t: "Three different possessives", any: ["mi", "mis", "tu", "tus", "su", "sus", "nuestro", "nuestra", "nuestros", "nuestras", "vuestro", "vuestra", "vuestros", "vuestras"], min: 3 },
+      { t: "Four family words", any: ["padre", "padres", "madre", "papá", "mamá", "hermano", "hermana", "hermanos", "hermanas", "abuelo", "abuela", "abuelos", "abuelas", "tío", "tía", "tíos", "tías", "primo", "prima", "primos", "primas", "hijo", "hija", "hijos", "hijas", "esposo", "esposa", "sobrino", "sobrina", "padrastro", "madrastra", "mascota", "familia"], min: 4 },
+      { t: "Possession with **de** (*la casa de…*)", re: "\\b(el|la|los|las)\\s+\\p{L}+\\s+(de|del)\\s+\\p{L}+" }
+    ]
+  },
+  reflect: {
+    q: "Velázquez painted himself right into the royal family's portrait. Who would you paint into *your* family portrait? Think about people who are like family to you even if you aren't related: a coach, a neighbor, a friend. Why do they belong in the picture?",
+    placeholder: "In my family portrait, I would include…"
+  },
+  further: {
+    id: "x1", type: "quiz", title: "Challenge: *su* can mean many things",
+    questions: [
+      { q: "*Marta y su hermano.* Whose brother?", choices: [["Marta's (her brother)", true], ["my brother", false], ["our brother", false], ["your (tú) brother", false]] },
+      { q: "How can you make *su casa* clearly mean *their house*?", choices: [["la casa de ellos", true], ["la casa su", false], ["su casa de", false], ["sus casa", false]] },
+      { q: "*La hija ___ rey* (the king's daughter)", choices: [["del", true, "*de + el = del*"], ["de el", false], ["de la", false], ["al", false]] }
+    ]
+  },
+  culture: "**¿Sabías?** In Spanish-speaking countries, people often have **two last names**: the father's first last name, then the mother's. If Juan García López and María Ruiz Pérez have a daughter named Ana, she is **Ana García Ruiz**.",
+  teacher: {
+    snags: [
+      ["Task 2", "Matches the possessive to the owner", "Look at the noun: *nuestra casa* even if the owners are boys."],
+      ["Task 4", "Thinks Pedro and Carmen are the father's parents", "Reread: *los padres de mi madre*."],
+      ["Task 5", "Writes *Ana's perro*", "Spanish has no *'s*. Use *el perro de Ana*."]
+    ],
+    factcheck: "*Las Meninas* (1656), Museo del Prado. Infanta Margarita Teresa was about five. Velázquez's self-portrait is on the left; Philip IV and Mariana of Austria appear in the mirror. Double surnames: paternal first surname + maternal first surname is the traditional order (Spain now allows parents to choose)."
+  }
+};

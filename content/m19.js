@@ -1,0 +1,154 @@
+module.exports = {
+  num: 19, unit: 4, slug: "m19-o-ue", minutes: 45,
+  title: "Verbos con cambio: o → ue",
+  subtitle: "Poder, dormir, volver, and jugar (u → ue)",
+  lede: "A second kind of boot verb changes **o** to **ue**: *poder* becomes *puedo*. And one special verb, *jugar*, changes **u** to **ue**.",
+  recap: "Last time you learned e → ie boot verbs like **querer** (*quiero, quieres, quiere, queremos, queréis, quieren*).",
+  context: {
+    title: "Un contrato en una servilleta",
+    place: "Rosario, Argentina · Barcelona · Lusail, Catar",
+    text: `As a boy in Rosario, Argentina, **Lionel Messi** was the best player on every team, but he was also the smallest. At age ten, doctors found that his body didn't make enough growth hormone. The treatment was expensive, and his family couldn't pay for it for long.
+
+In December 2000, a director of **FC Barcelona** watched the 13-year-old play and wanted to sign him right away. With no contract paper at hand, he wrote the agreement on a **paper napkin**. The club paid for Messi's treatment, and the family moved to Spain.
+
+On **December 18, 2022**, in Lusail, Qatar, Messi led Argentina to win the World Cup final against France after a 3–3 tie and a penalty shootout. People who had once said he was too small now said: {{¡Messi puede jugar con cualquiera!}} (*Messi can play with anyone!*)`
+  },
+  learn: [
+    {
+      title: "o → ue",
+      text: `These verbs change **o** to **ue** in the same boot shape: every form except *nosotros* and *vosotros*.`,
+      conj: [
+        { inf: "poder", en: "to be able to, can", forms: ["p**ue**do", "p**ue**des", "p**ue**de", "podemos", "podéis", "p**ue**den"] },
+        { inf: "dormir", en: "to sleep", forms: ["d**ue**rmo", "d**ue**rmes", "d**ue**rme", "dormimos", "dormís", "d**ue**rmen"] }
+      ],
+      tip: "**Poder** + infinitive means *can*: {{¿Puedes venir?}} (*Can you come?*) {{No puedo dormir.}} (*I can't sleep.*)"
+    },
+    {
+      title: "Common o → ue verbs, and jugar",
+      flash: [
+        ["poder", "to be able, can"], ["dormir", "to sleep"], ["volver", "to return, go back"], ["almorzar", "to eat lunch"], ["contar", "to count; to tell"],
+        ["encontrar", "to find"], ["costar", "to cost"], ["recordar", "to remember"], ["morir", "to die"], ["jugar", "to play (a sport, a game)"]
+      ],
+      tip: "**¿Cuánto cuesta?** (*How much does it cost?*) uses *costar*. For more than one thing: **¿Cuánto cuestan?**"
+    },
+    {
+      title: "Jugar: u → ue, and jugar vs. tocar",
+      text: `**Jugar** is the only verb that changes **u** to **ue**. Use **jugar a** + a sport or game (and *a + el = al*). For music, use **tocar** (Module 11).`,
+      conj: [{ inf: "jugar", en: "to play", forms: ["j**ue**go", "j**ue**gas", "j**ue**ga", "jugamos", "jugáis", "j**ue**gan"] }],
+      examples: [
+        ["Juego al fútbol los sábados.", "I play soccer on Saturdays."],
+        ["Mi hermana juega al béisbol.", "My sister plays baseball."],
+        ["Jugamos a los videojuegos.", "We play video games."],
+        ["Mi primo toca la trompeta.", "My cousin plays the trumpet."]
+      ]
+    }
+  ],
+  tasks: [
+    {
+      id: "t1", type: "conj", title: "Conjugate two verbs",
+      intro: "Write every form. Change o → ue (or u → ue) inside the boot.",
+      pick: 2,
+      verbs: [
+        { inf: "volver", en: "to return", forms: ["vuelvo", "vuelves", "vuelve", "volvemos", "volvéis", "vuelven"] },
+        { inf: "almorzar", en: "to eat lunch", forms: ["almuerzo", "almuerzas", "almuerza", "almorzamos", "almorzáis", "almuerzan"] },
+        { inf: "encontrar", en: "to find", forms: ["encuentro", "encuentras", "encuentra", "encontramos", "encontráis", "encuentran"] },
+        { inf: "jugar", en: "to play", forms: ["juego", "juegas", "juega", "jugamos", "jugáis", "juegan"] },
+        { inf: "recordar", en: "to remember", forms: ["recuerdo", "recuerdas", "recuerda", "recordamos", "recordáis", "recuerdan"] }
+      ],
+      hints: ["The boot: everything except nosotros and vosotros changes.", "In *almorzar*, *encontrar* and *recordar*, it's the **o** right before the ending that changes: *alm**ue**rzo*, *enc**ue**ntro*, *rec**ue**rdo*."]
+    },
+    {
+      id: "t2", type: "select", title: "Choose the right form",
+      intro: "Tap the form that matches the subject.",
+      items: [
+        { s: "Yo no {puedo|podo|podemos} ir a la fiesta." }, { s: "Mi hermano {duerme|dorme|duermen} diez horas." }, { s: "Nosotros {volvemos|vuelvemos|vuelven} a casa a las cinco." },
+        { s: "¿Cuánto {cuesta|costa|cuestan} el libro?" }, { s: "¿Cuánto {cuestan|cuesta|costan} los zapatos?" }, { s: "Messi {juega|joga|jugan} muy bien." },
+        { s: "Mis amigos y yo {almorzamos|almuerzamos|almuerzan} a las doce." }, { s: "¿Tú {recuerdas|recordas|recuerdo} mi número?" }
+      ],
+      hints: ["Outside the boot: *podemos, volvemos, almorzamos*.", "*Cuesta* for one thing, *cuestan* for more than one."]
+    },
+    {
+      id: "t3", type: "cloze", title: "Complete the sentences",
+      intro: "Write the correct form of the verb in parentheses.",
+      pick: 8,
+      items: [
+        "¿[Puedes] ((poder)) ayudarme?", "Los bebés [duermen] ((dormir)) mucho.", "Yo [juego] ((jugar)) al baloncesto.", "Nosotros [jugamos] ((jugar)) al tenis.",
+        "El autobús [vuelve] ((volver)) a las tres.", "No [encuentro] ((encontrar)) mi mochila.", "Las entradas [cuestan] ((costar)) veinte dólares.", "Mi abuelo [cuenta] ((contar)) historias.",
+        "Vosotros [podéis] ((poder)) venir mañana.", "Ellos [almuerzan] ((almorzar)) en la cafetería."
+      ],
+      hints: ["Is the subject inside the boot (yo, tú, él, ellos) or outside (nosotros, vosotros)?", "*Jugar*: **jue-** inside the boot."]
+    },
+    {
+      id: "t4", type: "select", title: "Jugar or tocar?",
+      intro: "Which verb means *play* here?",
+      items: [
+        { s: "Mi amigo {juega|toca} al fútbol." }, { s: "Yo {toco|juego} la guitarra." }, { s: "¿Tú {juegas|tocas} a los videojuegos?" },
+        { s: "Ella {toca|juega} el violín en la orquesta." }, { s: "Nosotros {jugamos|tocamos} al béisbol en el verano." }, { s: "Ellos {tocan|juegan} música en la iglesia." }
+      ],
+      hints: ["Sports and games: **jugar**. Instruments and music: **tocar**."]
+    },
+    {
+      id: "t5", type: "listen", title: "What can they do?",
+      intro: "Listen and answer.",
+      questions: [
+        { say: "No puedo jugar hoy porque tengo que estudiar.", q: "Why can't the speaker play today?", choices: [["They have to study.", true], ["They're sick.", false], ["They're tired.", false], ["They lost the ball.", false]] },
+        { say: "Duermo ocho horas, pero mi hermano solo duerme seis.", q: "How much does the brother sleep?", choices: [["six hours", true], ["eight hours", false], ["ten hours", false], ["two hours", false]] },
+        { say: "Los zapatos cuestan cincuenta dólares.", q: "How much are the shoes?", choices: [["$50", true], ["$15", false], ["$60", false], ["$5", false]] },
+        { say: "Volvemos a casa después del partido.", q: "When do they go back home?", choices: [["after the game", true], ["before the game", false], ["at lunchtime", false], ["in the morning", false]] }
+      ],
+      hints: ["Tap 🐢 to hear it slowly."]
+    },
+    {
+      id: "t6", type: "translate", title: "Say it in Spanish",
+      intro: "Translate.",
+      items: [
+        { en: "I can't sleep.", es: ["[yo] no puedo dormir"] },
+        { en: "Can you (tú) come?", es: ["¿[tú] puedes venir?"] },
+        { en: "We play soccer.", es: ["[nosotros] jugamos {al fútbol|fútbol}", "[nosotras] jugamos {al fútbol|fútbol}"] },
+        { en: "How much does it cost?", es: ["¿cuánto cuesta?"] },
+        { en: "They return at six.", es: ["[ellos] vuelven a las seis", "[ellas] vuelven a las seis", "[ellos] regresan a las seis", "[ellas] regresan a las seis"] }
+      ],
+      hints: ["*Can* = **poder** + infinitive.", "*Play a sport* = **jugar al** + sport."]
+    },
+    {
+      id: "s1", type: "speak", title: "Say it out loud",
+      intro: "Listen, record, compare.",
+      items: [{ s: "¿Puedes jugar al fútbol hoy?" }, { s: "No, no puedo. Vuelvo a casa a las cinco." }]
+    }
+  ],
+  build: {
+    heading: "Puedo, juego, duermo",
+    prompt: `Write **at least 5 sentences** about your routine and your free time: what you play, when you eat lunch and go home, how much you sleep, and what you can or can't do. Use at least **three different o → ue (or u → ue) verbs**, including **poder** + infinitive.`,
+    model: `{{Juego al béisbol en la primavera.}} {{Almuerzo a las once y media en la escuela.}} {{Vuelvo a casa a las tres.}} {{Duermo ocho horas, pero mi hermano duerme más.}} {{No puedo jugar los domingos porque visitamos a mis abuelos.}}`,
+    placeholder: "Juego al…",
+    reqs: [
+      { t: "At least 5 sentences", sentences: 5 },
+      { t: "Three different o → ue / u → ue verbs", min: 3, any: ["puedo", "puedes", "puede", "podemos", "podéis", "pueden", "duermo", "duermes", "duerme", "dormimos", "duermen", "vuelvo", "vuelves", "vuelve", "volvemos", "vuelven", "almuerzo", "almuerzas", "almuerza", "almorzamos", "almuerzan", "cuento", "cuenta", "contamos", "cuentan", "encuentro", "encuentra", "encontramos", "encuentran", "cuesta", "cuestan", "recuerdo", "recuerdas", "recuerda", "recordamos", "recuerdan", "juego", "juegas", "juega", "jugamos", "jugáis", "juegan"] },
+      { t: "**poder** + infinitive", re: "\\b(puedo|puedes|puede|podemos|podéis|pueden)\\s+\\p{L}+(ar|er|ir)\\b" }
+    ]
+  },
+  reflect: {
+    q: "People once said Messi was too small, and someone believed in him anyway, on a napkin. What is something people might think you *can't* do, but you know you *can*? Who believes in you?",
+    placeholder: "Something I can do is…"
+  },
+  further: {
+    id: "x1", type: "errors", title: "Challenge: fix the mistakes",
+    intro: "Tap the wrong word, then type the correct one.",
+    items: [
+      { s: "Nosotros puedemos ir.", bad: "puedemos", fix: "podemos" },
+      { s: "Yo jugo al tenis.", bad: "jugo", fix: "juego" },
+      { s: "Mi gato dorme todo el día.", bad: "dorme", fix: "duerme" },
+      { s: "¿Cuánto cuesta los libros?", bad: "cuesta", fix: "cuestan" },
+      { s: "Ella juega el piano.", bad: "juega", fix: "toca", why: "Instruments use **tocar**." }
+    ]
+  },
+  culture: "**¿Sabías?** In Spain basketball is often called **el baloncesto**; in much of Latin America it's **el básquetbol** or **el básquet**.",
+  teacher: {
+    snags: [
+      ["Task 1", "Changes the first o in *recordar*", "It's the o closest to the ending: *rec**ue**rdo*."],
+      ["Task 2", "*cuesta* for *los zapatos*", "One thing or more than one?"],
+      ["Task 4", "*juega el violín*", "Instruments: *tocar*."]
+    ],
+    factcheck: "Messi was diagnosed with growth hormone deficiency around age 10; Barcelona's Carles Rexach signed a commitment on a paper napkin on December 14, 2000. 2022 World Cup final, December 18, 2022, Lusail Stadium: Argentina 3–3 France, Argentina won 4–2 on penalties."
+  }
+};

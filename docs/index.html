@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Español 9 · Gramática</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600..800&family=Inter:wght@400..800&display=swap">
+<link rel="stylesheet" href="assets/course.css">
+<style>
+/* Layout: one column listing the six units in order; each module is a row with its progress on this iPad. */
+.hero { display: grid; gap: 14px; }
+.brand { display: flex; align-items: center; gap: 16px; }
+.brand img { width: 76px; height: 76px; flex: none; background: #fff; border-radius: 50%; }
+.school { color: var(--accent); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; font-size: 0.875rem; }
+.flagband { height: 12px; border-radius: 3px; background: linear-gradient(var(--accent) 0 25%, var(--gold) 25% 75%, var(--accent) 75%); }
+.how { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; display: grid; gap: 8px; }
+.how ul { margin: 0; padding-left: 1.2rem; display: grid; gap: 4px; }
+.unit { display: grid; gap: 10px; }
+.unit h2 { font-size: 1.3rem; }
+.unit h2 .un { display: block; font-family: var(--font-body); font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--tile); }
+.unit h2 .en { font-family: var(--font-body); font-weight: 500; font-size: 0.95rem; color: var(--muted); }
+.unit ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.unit li { display: grid; grid-template-columns: 3rem 1fr auto; grid-template-areas: "n t p" "n s p"; align-items: center; gap: 0 12px; padding: 10px 16px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface); }
+.unit li .num { grid-area: n; font-size: 0.85rem; font-weight: 800; color: var(--accent); font-variant-numeric: tabular-nums; }
+.unit li a { grid-area: t; color: var(--ink); font-weight: 700; text-decoration: none; }
+.unit li a:hover { color: var(--accent); }
+.unit li .sub { grid-area: s; color: var(--muted); font-size: 0.85rem; }
+.unit li .prog { grid-area: p; font-size: 0.8rem; font-weight: 650; padding: 2px 10px; border-radius: 999px; white-space: nowrap; }
+.unit li .prog.started { color: var(--tile); background: var(--tile-soft); }
+.unit li .prog.done { color: var(--ok); background: var(--ok-soft); }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header class="hero">
+    <div class="brand">
+      <img src="assets/seal.png" alt="Scranton Preparatory School seal">
+      <div>
+        <p class="school">Scranton Preparatory School</p>
+        <h1 lang="es">Español 9: Gramática</h1>
+      </div>
+    </div>
+    <div class="flagband" aria-hidden="true"></div>
+    <p class="lede">A self-paced Spanish grammar course for freshmen who studied Spanish in middle school. One module a week, 30 modules in all. Open the module your teacher assigned in Blackbaud, work through every step, then complete the Blackbaud check.</p>
+    <div class="how">
+      <h2 style="font-size:1.1rem">Cómo funciona · How it works</h2>
+      <ul>
+        <li>Every module has the same <b>7 steps</b>: Contexto, Aprende, Practica, Crea, Reflexiona, Evalúa, Más.</li>
+        <li>Tap any <b>🔊</b> to hear Spanish. Choose a voice from <b>España</b> or <b>Latinoamérica</b> at the top of each module, and tap <b>🐢</b> or choose <b>Lenta</b> to slow it down.</li>
+        <li>Where you type Spanish, tap the <b>á é í ó ú ü ñ ¿ ¡</b> keys. On the iPad keyboard you can also hold a letter down to choose an accent.</li>
+        <li>Activities check themselves. <b>Yellow</b> means you're right except for an accent mark.</li>
+        <li>Finish every activity to get the <b>completion code</b> for the Blackbaud check.</li>
+      </ul>
+    </div>
+  </header>
+  <section class="unit">
+    <h2><span class="un">Unidad 1</span> ¡Hola! Los fundamentos <span class="en">· Foundations: sounds, spelling, greetings, numbers, time</span></h2>
+    <ol>
+      <li><span class="num">M1</span><a href="m01-alfabeto.html" lang="es">El alfabeto y los sonidos</a><span class="sub">The Spanish alphabet and its sounds</span><span class="prog" data-m="1" data-n="7"></span></li>
+      <li><span class="num">M2</span><a href="m02-acentos.html" lang="es">Las sílabas y los acentos</a><span class="sub">Stress, written accent marks, and ¿ ¡</span><span class="prog" data-m="2" data-n="7"></span></li>
+      <li><span class="num">M3</span><a href="m03-saludos.html" lang="es">Saludos y pronombres</a><span class="sub">Greetings, introductions, subject pronouns, tú and usted</span><span class="prog" data-m="3" data-n="7"></span></li>
+      <li><span class="num">M4</span><a href="m04-numeros-fechas.html" lang="es">Los números y las fechas</a><span class="sub">Numbers 0–100, days of the week, months, and dates</span><span class="prog" data-m="4" data-n="7"></span></li>
+      <li><span class="num">M5</span><a href="m05-hora-tiempo.html" lang="es">La hora y el tiempo</a><span class="sub">Telling time and talking about the weather</span><span class="prog" data-m="5" data-n="7"></span></li>
+    </ol>
+  </section>
+  <section class="unit">
+    <h2><span class="un">Unidad 2</span> ¿Cómo eres? Sustantivos y descripciones <span class="en">· Nouns, articles, ser, adjectives, possessives</span></h2>
+    <ol>
+      <li><span class="num">M6</span><a href="m06-genero-numero.html" lang="es">El género y el número</a><span class="sub">Masculine and feminine nouns, and making plurals</span><span class="prog" data-m="6" data-n="7"></span></li>
+      <li><span class="num">M7</span><a href="m07-articulos.html" lang="es">Los artículos</a><span class="sub">Definite and indefinite articles: el, la, los, las, un, una, unos, unas</span><span class="prog" data-m="7" data-n="7"></span></li>
+      <li><span class="num">M8</span><a href="m08-ser.html" lang="es">El verbo ser</a><span class="sub">Who you are and where you're from</span><span class="prog" data-m="8" data-n="7"></span></li>
+      <li><span class="num">M9</span><a href="m09-adjetivos.html" lang="es">Los adjetivos</a><span class="sub">Describing people and things: agreement and position</span><span class="prog" data-m="9" data-n="7"></span></li>
+      <li><span class="num">M10</span><a href="m10-familia-posesivos.html" lang="es">La familia, hay y los posesivos</a><span class="sub">Family words, there is / there are, and my, your, his, our</span><span class="prog" data-m="10" data-n="7"></span></li>
+    </ol>
+  </section>
+  <section class="unit">
+    <h2><span class="un">Unidad 3</span> Mi vida diaria: el presente <span class="en">· Regular verbs, questions, tener, estar, ser vs. estar</span></h2>
+    <ol>
+      <li><span class="num">M11</span><a href="m11-verbos-ar.html" lang="es">Los verbos -ar</a><span class="sub">Regular -ar verbs in the present tense</span><span class="prog" data-m="11" data-n="7"></span></li>
+      <li><span class="num">M12</span><a href="m12-verbos-er-ir.html" lang="es">Los verbos -er e -ir</a><span class="sub">Regular -er and -ir verbs in the present tense</span><span class="prog" data-m="12" data-n="7"></span></li>
+      <li><span class="num">M13</span><a href="m13-preguntas.html" lang="es">Las preguntas</a><span class="sub">Question words and how to ask questions</span><span class="prog" data-m="13" data-n="7"></span></li>
+      <li><span class="num">M14</span><a href="m14-tener.html" lang="es">El verbo tener</a><span class="sub">Tener, tener expressions, tener que, and saying no</span><span class="prog" data-m="14" data-n="7"></span></li>
+      <li><span class="num">M15</span><a href="m15-estar.html" lang="es">El verbo estar</a><span class="sub">Where things are and how people feel</span><span class="prog" data-m="15" data-n="7"></span></li>
+      <li><span class="num">M16</span><a href="m16-ser-estar.html" lang="es">Ser y estar</a><span class="sub">Choosing the right to be</span><span class="prog" data-m="16" data-n="7"></span></li>
+    </ol>
+  </section>
+  <section class="unit">
+    <h2><span class="un">Unidad 4</span> En la ciudad: verbos irregulares <span class="en">· Ir, stem-changing verbs, irregular yo forms, gustar</span></h2>
+    <ol>
+      <li><span class="num">M17</span><a href="m17-ir.html" lang="es">El verbo ir</a><span class="sub">Going places, a + el = al, and ir a + infinitive</span><span class="prog" data-m="17" data-n="7"></span></li>
+      <li><span class="num">M18</span><a href="m18-e-ie.html" lang="es">Verbos con cambio: e → ie</a><span class="sub">Stem-changing &quot;boot&quot; verbs like querer and preferir</span><span class="prog" data-m="18" data-n="7"></span></li>
+      <li><span class="num">M19</span><a href="m19-o-ue.html" lang="es">Verbos con cambio: o → ue</a><span class="sub">Poder, dormir, volver, and jugar (u → ue)</span><span class="prog" data-m="19" data-n="7"></span></li>
+      <li><span class="num">M20</span><a href="m20-e-i.html" lang="es">Verbos con cambio: e → i</a><span class="sub">Pedir, servir, decir and seguir; ordering at a restaurant</span><span class="prog" data-m="20" data-n="7"></span></li>
+      <li><span class="num">M21</span><a href="m21-yo-irregular.html" lang="es">El yo irregular; saber y conocer</a><span class="sub">Hago, pongo, salgo, sé, conozco… and two ways to say to know</span><span class="prog" data-m="21" data-n="7"></span></li>
+      <li><span class="num">M22</span><a href="m22-gustar.html" lang="es">El verbo gustar</a><span class="sub">Me gusta, me gustan; indirect object pronouns; encantar</span><span class="prog" data-m="22" data-n="7"></span></li>
+    </ol>
+  </section>
+  <section class="unit">
+    <h2><span class="un">Unidad 5</span> Mi casa y mi rutina <span class="en">· Reflexive verbs, progressive, object pronouns, comparisons, commands</span></h2>
+    <ol>
+      <li><span class="num">M23</span><a href="m23-reflexivos.html" lang="es">Los verbos reflexivos</a><span class="sub">Your daily routine: me levanto, me ducho, me acuesto</span><span class="prog" data-m="23" data-n="7"></span></li>
+      <li><span class="num">M24</span><a href="m24-progresivo.html" lang="es">El presente progresivo</a><span class="sub">What's happening right now: estoy hablando, estamos comiendo</span><span class="prog" data-m="24" data-n="7"></span></li>
+      <li><span class="num">M25</span><a href="m25-objeto-directo.html" lang="es">Los pronombres de objeto directo</a><span class="sub">lo, la, los, las: &quot;Do you see it? Yes, I see it.&quot;</span><span class="prog" data-m="25" data-n="7"></span></li>
+      <li><span class="num">M26</span><a href="m26-comparaciones.html" lang="es">Comparativos y superlativos</a><span class="sub">More than, less than, as … as, the most</span><span class="prog" data-m="26" data-n="7"></span></li>
+      <li><span class="num">M27</span><a href="m27-demostrativos.html" lang="es">Los demostrativos y la ropa</a><span class="sub">This, that, that one over there; clothing, prices and numbers to 1,000</span><span class="prog" data-m="27" data-n="7"></span></li>
+      <li><span class="num">M28</span><a href="m28-mandatos.html" lang="es">Los mandatos informales</a><span class="sub">Telling a friend what to do: habla, come, ven, haz, no corras</span><span class="prog" data-m="28" data-n="7"></span></li>
+    </ol>
+  </section>
+  <section class="unit">
+    <h2><span class="un">Unidad 6</span> El pasado y el repaso <span class="en">· The preterite and a final review</span></h2>
+    <ol>
+      <li><span class="num">M29</span><a href="m29-preterito.html" lang="es">El pretérito</a><span class="sub">Talking about the past: hablé, comí, viví</span><span class="prog" data-m="29" data-n="7"></span></li>
+      <li><span class="num">M30</span><a href="m30-preterito-irregular-repaso.html" lang="es">El pretérito irregular y el repaso final</a><span class="sub">Fui, fue, hice, tuve, estuve… and a look back at the whole year</span><span class="prog" data-m="30" data-n="7"></span></li>
+    </ol>
+  </section>
+  <footer><span>Progress shown here is saved in this iPad's browser.</span></footer>
+</main>
+<script>
+// Show each module's progress from this iPad's saved work.
+document.querySelectorAll(".prog").forEach(function (p) {
+  var n = Number(p.getAttribute("data-n")), s = null;
+  try { s = JSON.parse(localStorage.getItem("espanol9:m" + p.getAttribute("data-m")) || "null"); } catch (e) {}
+  if (!s || !s.done) return;
+  var k = Object.keys(s.done).filter(function (id) { return s.done[id]; }).length;
+  if (!k) return;
+  k = Math.min(k, n);
+  p.textContent = k >= n ? "Hecho ✓" : k + " of " + n;
+  p.className = "prog " + (k >= n ? "done" : "started");
+});
+</script>
+</body>
+</html>

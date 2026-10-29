@@ -1,0 +1,184 @@
+module.exports = {
+  num: 11, unit: 3, slug: "m11-verbos-ar", minutes: 45,
+  title: "Los verbos -ar",
+  subtitle: "Regular -ar verbs in the present tense",
+  lede: "Most Spanish verbs end in -ar, and they all follow one pattern. Learn it once and you can use hundreds of verbs.",
+  recap: "In Unit 2 you described people with **ser** and adjectives, and you used possessives like **mi** and **nuestro**. Now you'll talk about what people *do*.",
+  context: {
+    title: "La rana de Salamanca",
+    place: "Salamanca, España",
+    text: `The **Universidad de Salamanca** was founded in **1218**, which makes it the oldest university in Spain that is still open. For 800 years, students have come here to {{estudiar}}, {{escuchar}} lectures and {{trabajar}} late into the night.
+
+Its stone entrance is covered with carvings of saints, kings and monsters. Hidden among them is a tiny **frog** (*una rana*) sitting on a skull. Tradition says that a student who finds the frog without help will pass every exam. Visitors stand in the plaza for a long time, looking and pointing.
+
+Today thousands of students from around the world come to Salamanca every summer to study Spanish. The first verbs they practice look a lot like the ones in this module: {{Yo estudio. Tú estudias. Nosotros estudiamos.}}`
+  },
+  learn: [
+    {
+      title: "Verbs come in three families",
+      text: `The basic form of a verb is the **infinitive**, like *to speak*. In Spanish, every infinitive ends in **-ar**, **-er** or **-ir**. This module is about the biggest family, the **-ar** verbs.
+
+To use a verb, take off the **-ar** to find the **stem**, then add an **ending** that tells who is doing the action: {{habl**ar**|hablar}} → **habl-** + **o** = {{habl**o**|hablo}} (*I speak*).`,
+      flash: [
+        ["hablar", "to speak, to talk"], ["estudiar", "to study"], ["trabajar", "to work"], ["escuchar", "to listen (to)"],
+        ["bailar", "to dance"], ["cantar", "to sing"], ["tocar", "to play (an instrument), to touch"], ["mirar", "to look at, to watch"],
+        ["necesitar", "to need"], ["llegar", "to arrive"], ["tomar", "to take, to drink"], ["caminar", "to walk"]
+      ]
+    },
+    {
+      title: "Six endings: -o, -as, -a, -amos, -áis, -an",
+      text: `Every regular -ar verb uses the same six endings. The ending alone tells you who the subject is, so Spanish speakers often leave out *yo*, *tú* and *nosotros*.`,
+      conj: [
+        { inf: "hablar", en: "to speak", forms: ["habl**o**", "habl**as**", "habl**a**", "habl**amos**", "habl**áis**", "habl**an**"] },
+        { inf: "estudiar", en: "to study", forms: ["estudi**o**", "estudi**as**", "estudi**a**", "estudi**amos**", "estudi**áis**", "estudi**an**"] }
+      ],
+      examples: [
+        ["Hablo inglés y español.", "I speak English and Spanish."],
+        ["¿Estudias mucho?", "Do you study a lot?"],
+        ["Mi hermana trabaja los sábados.", "My sister works on Saturdays."],
+        ["Nosotros escuchamos música.", "We listen to music."],
+        ["Ustedes bailan muy bien.", "You all dance very well."]
+      ],
+      tip: "The **vosotros** form (habl**áis**) is used in Spain for \"you all\" with friends. In Latin America, people use **ustedes** for every \"you all.\" You should recognize both."
+    },
+    {
+      title: "One verb, three English meanings",
+      text: `{{Hablo español.}} can mean *I speak Spanish*, *I do speak Spanish* or *I am speaking Spanish*. Spanish doesn't need a helper word like *do* or *am*.
+
+To make a sentence negative, put **no** right before the verb: {{No trabajo los domingos.}} (*I don't work on Sundays.*)
+
+Some verbs already include a word that English adds separately: {{escuchar}} = *to listen **to***, {{mirar}} = *to look **at***, {{buscar}} = *to look **for***. So you say {{Escucho la radio.}}, not *escucho a la radio*.`,
+      tip: "When two verbs are together, only the first one changes: {{Necesito estudiar.}} (*I need to study.*)"
+    }
+  ],
+  tasks: [
+    {
+      id: "t1", type: "conj", title: "Conjugate two verbs",
+      intro: "Write all the forms of each verb. Use the endings **-o, -as, -a, -amos, -áis, -an**.",
+      pick: 2,
+      verbs: [
+        { inf: "trabajar", en: "to work", forms: ["trabajo", "trabajas", "trabaja", "trabajamos", "trabajáis", "trabajan"] },
+        { inf: "escuchar", en: "to listen", forms: ["escucho", "escuchas", "escucha", "escuchamos", "escucháis", "escuchan"] },
+        { inf: "bailar", en: "to dance", forms: ["bailo", "bailas", "baila", "bailamos", "bailáis", "bailan"] },
+        { inf: "cantar", en: "to sing", forms: ["canto", "cantas", "canta", "cantamos", "cantáis", "cantan"] },
+        { inf: "caminar", en: "to walk", forms: ["camino", "caminas", "camina", "caminamos", "camináis", "caminan"] }
+      ],
+      hints: ["Take off **-ar** to find the stem: *trabaj-*, *escuch-*, *bail-*…", "Then add the ending for each person: yo **-o**, tú **-as**, él **-a**, nosotros **-amos**, vosotros **-áis**, ellos **-an**.", "Only the vosotros form has an accent mark: **-áis**."]
+    },
+    {
+      id: "t2", type: "select", title: "Choose the right form",
+      intro: "Tap the verb form that matches the subject.",
+      items: [
+        { s: "Yo {estudio|estudia|estudias} en la biblioteca.", en: "I study in the library." },
+        { s: "Tú {tocas|toco|tocan} la guitarra.", en: "You play the guitar." },
+        { s: "La profesora {llega|llegas|llego} a las ocho.", en: "The teacher arrives at eight." },
+        { s: "Mis amigos y yo {caminamos|caminan|camina} a la escuela.", en: "My friends and I walk to school.", why: "*Mis amigos y yo* = nosotros." },
+        { s: "Ellas {miran|miramos|mira} la televisión.", en: "They watch television." },
+        { s: "¿Vosotros {habláis|hablan|hablamos} francés?", en: "Do you all speak French? (Spain)" },
+        { s: "Ustedes {necesitan|necesitas|necesita} un lápiz.", en: "You all need a pencil.", why: "*Ustedes* uses the same form as *ellos*." },
+        { s: "Mi papá no {trabaja|trabajo|trabajan} los domingos.", en: "My dad doesn't work on Sundays." }
+      ],
+      hints: ["Find the subject first. Who is doing the action?", "Two people, one of them *yo*, is always **nosotros** (-amos). *Ustedes* uses the **-an** ending, like *ellos*."]
+    },
+    {
+      id: "t3", type: "listen", title: "Who is it?",
+      intro: "Listen to each sentence. The subject isn't said, so the **ending** is your only clue. Who is doing the action?",
+      questions: [
+        { say: "Escuchamos música en el coche.", q: "Who listens to music in the car?", choices: [["nosotros (we)", true, "**-amos** means nosotros."], ["ellos (they)", false], ["yo (I)", false], ["tú (you)", false]] },
+        { say: "Bailas muy bien.", q: "Who dances very well?", choices: [["tú (you)", true, "**-as** means tú."], ["yo (I)", false], ["ella (she)", false], ["nosotros (we)", false]] },
+        { say: "Trabajo en un restaurante.", q: "Who works in a restaurant?", choices: [["yo (I)", true, "**-o** means yo."], ["él (he)", false], ["tú (you)", false], ["ellos (they)", false]] },
+        { say: "Cantan en el coro de la escuela.", q: "Who sings in the school choir?", choices: [["ellos (they)", true, "**-an** means ellos, ellas or ustedes."], ["nosotros (we)", false], ["yo (I)", false], ["usted (you, formal)", false]] },
+        { say: "Toma el autobús a las siete.", q: "Who takes the bus at seven?", choices: [["él or ella (he or she)", true, "**-a** means él, ella or usted."], ["yo (I)", false], ["tú (you)", false], ["nosotros (we)", false]] }
+      ],
+      hints: ["Listen to the very end of the first word.", "-o = yo · -as = tú · -a = él/ella/usted · -amos = nosotros · -an = ellos/ellas/ustedes"]
+    },
+    {
+      id: "t4", type: "cloze", title: "Complete the sentences",
+      intro: "Write the correct form of the verb in parentheses.",
+      items: [
+        "Yo [hablo] ((hablar)) con mi abuela por teléfono.",
+        "¿Tú [practicas] ((practicar)) deportes después de las clases?",
+        "Mi hermano [toca] ((tocar)) el piano.",
+        "Nosotros [necesitamos] ((necesitar)) estudiar para el examen.",
+        "Los estudiantes [llegan] ((llegar)) temprano.",
+        "Usted [trabaja] ((trabajar)) en el hospital, ¿verdad?",
+        "Vosotros [cantáis] ((cantar)) en la iglesia.",
+        "Tú y Marta [miran] ((mirar)) una película.",
+        "Yo no [nado] ((nadar)) en el invierno.",
+        "Elena y yo [compramos] ((comprar)) fruta en el mercado."
+      ],
+      pick: 8,
+      hints: ["Find the subject, then find the matching ending.", "*Tú y Marta* is two people, and one is *you*: that's **ustedes** (-an). *Elena y yo* is **nosotros** (-amos).", "Only **-áis** (vosotros) has an accent mark."]
+    },
+    {
+      id: "t5", type: "order", title: "Build the sentences",
+      intro: "Tap the words in order to translate each sentence. Tap a word in your sentence to send it back. One sentence has a tile that doesn't belong.",
+      items: [
+        { en: "I listen to music in my room.", es: "Escucho música en mi cuarto.", alt: ["Yo escucho música en mi cuarto.", "En mi cuarto escucho música."] },
+        { en: "We don't work on Sundays.", es: "No trabajamos los domingos.", alt: ["Los domingos no trabajamos."] },
+        { en: "Do you dance with your friends?", es: "¿Bailas con tus amigos?", alt: ["¿Tú bailas con tus amigos?"] },
+        { en: "My parents need a new car.", es: "Mis padres necesitan un coche nuevo.", extra: ["necesita"] }
+      ],
+      hints: ["The verb ending tells who: **-o** yo, **-amos** nosotros, **-as** tú, **-an** ellos.", "**No** goes right before the verb.", "*Mis padres* is plural, so the verb ends in **-an**. The tile *necesita* doesn't belong."]
+    },
+    {
+      id: "t6", type: "translate", title: "Say it in Spanish",
+      intro: "Translate each sentence. You can leave out the subject pronoun (*yo*, *tú*, *nosotros*) or include it.",
+      items: [
+        { en: "I study Spanish.", es: ["[yo] estudio español"] },
+        { en: "She sings very well.", es: ["[ella] canta muy bien"] },
+        { en: "We walk to school.", es: ["[nosotros] caminamos a la escuela", "[nosotras] caminamos a la escuela"] },
+        { en: "They don't need a pencil.", es: ["[ellos] no necesitan un lápiz", "[ellas] no necesitan un lápiz"], why: "Put **no** before the verb: *no necesitan*." },
+        { en: "Do you (tú) play the guitar?", es: ["¿[tú] tocas la guitarra?"], why: "*To play an instrument* is **tocar**." }
+      ],
+      hints: ["First pick the verb, then the ending for the subject.", "*Play an instrument* = **tocar** (not *jugar*). *To school* = **a la escuela**.", "*Lápiz* has an accent mark: **lápiz**."]
+    },
+    {
+      id: "s1", type: "speak", title: "Say it out loud",
+      intro: "Listen to each sentence, then record yourself and compare. This is optional, but it helps.",
+      items: [
+        { s: "Hablo español con mis amigos.", en: "I speak Spanish with my friends." },
+        { s: "¿Estudias en la biblioteca?", en: "Do you study in the library?" },
+        { s: "Nosotros caminamos a la escuela.", en: "We walk to school." }
+      ]
+    }
+  ],
+  build: {
+    heading: "Mi semana",
+    prompt: `Write **5 or more sentences** in Spanish about what you, your family and your friends do during a normal week. Use at least **five different -ar verbs**, and at least three different subjects (for example *yo*, *mi mamá*, *mis amigos y yo*).`,
+    model: `{{Yo estudio mucho y escucho música por la noche.}} {{Mi mamá trabaja en una oficina.}} {{Mis amigos y yo practicamos fútbol los martes.}} {{Mi hermano no canta, pero toca la guitarra.}} {{Los sábados mis abuelos bailan en la cocina.}}`,
+    placeholder: "Yo estudio…",
+    reqs: [
+      { t: "At least 5 sentences", sentences: 5 },
+      { t: "A **yo** form (-o)", any: ["hablo", "estudio", "trabajo", "escucho", "bailo", "canto", "toco", "miro", "necesito", "llego", "tomo", "camino", "practico", "nado", "compro", "uso", "busco", "preparo", "descanso", "dibujo", "monto", "saco", "ayudo", "limpio", "cocino", "viajo", "visito", "llamo", "enseño", "juego"] },
+      { t: "A **nosotros** form (-amos)", re: "\\b\\p{L}+amos\\b" },
+      { t: "A **he / she / it** or **they** form", re: "\\b(habla|estudia|trabaja|escucha|baila|canta|toca|mira|necesita|llega|toma|camina|practica|nada|compra|usa|busca|prepara|descansa|dibuja|monta|saca|ayuda|limpia|cocina|viaja|visita|llama|enseña|hablan|estudian|trabajan|escuchan|bailan|cantan|tocan|miran|necesitan|llegan|toman|caminan|practican|nadan|compran|usan|buscan|preparan|descansan|dibujan|montan|sacan|ayudan|limpian|cocinan|viajan|visitan|llaman|enseñan)\\b" },
+      { t: "At least 5 different -ar verbs", any: ["hablo", "hablas", "habla", "hablamos", "hablan", "estudio", "estudias", "estudia", "estudiamos", "estudian", "trabajo", "trabajas", "trabaja", "trabajamos", "trabajan", "escucho", "escuchas", "escucha", "escuchamos", "escuchan", "bailo", "bailas", "baila", "bailamos", "bailan", "canto", "cantas", "canta", "cantamos", "cantan", "toco", "tocas", "toca", "tocamos", "tocan", "miro", "miras", "mira", "miramos", "miran", "necesito", "necesitas", "necesita", "necesitamos", "necesitan", "llego", "llegas", "llega", "llegamos", "llegan", "tomo", "tomas", "toma", "tomamos", "toman", "camino", "caminas", "camina", "caminamos", "caminan", "practico", "practicas", "practica", "practicamos", "practican", "nado", "nadas", "nada", "nadamos", "nadan", "compro", "compras", "compra", "compramos", "compran", "preparo", "prepara", "preparamos", "preparan", "descanso", "descansa", "descansamos", "descansan", "dibujo", "dibuja", "dibujamos", "dibujan", "ayudo", "ayuda", "ayudamos", "ayudan", "cocino", "cocina", "cocinamos", "cocinan", "visito", "visita", "visitamos", "visitan", "llamo", "llama", "llamamos", "llaman", "uso", "usa", "usamos", "usan", "busco", "busca", "buscamos", "buscan", "limpio", "limpia", "limpiamos", "limpian"], min: 5 }
+    ]
+  },
+  reflect: {
+    q: "Salamanca's students have studied there for 800 years, and many came from far away to learn. Who helps *you* learn: a teacher, a parent, a friend, a coach? What does that person do that helps, and how could you do the same for someone else?",
+    placeholder: "Someone who helps me learn is…"
+  },
+  further: {
+    id: "x1", type: "errors", title: "Challenge: fix the mistakes",
+    intro: "Each sentence has one wrong word. Tap it, then type the correct word.",
+    items: [
+      { s: "Nosotros habla español en clase.", bad: "habla", fix: "hablamos", why: "*Nosotros* → -amos." },
+      { s: "Yo escucha la radio.", bad: "escucha", fix: "escucho", why: "*Yo* → -o." },
+      { s: "Mis primos trabajamos en una tienda.", bad: "trabajamos", fix: "trabajan", why: "*Mis primos* = ellos → -an." },
+      { s: "Tú miro la televisión.", bad: "miro", fix: "miras", why: "*Tú* → -as." },
+      { s: "Ellas canta en el coro.", bad: "canta", fix: "cantan", why: "*Ellas* → -an." }
+    ]
+  },
+  culture: "**¿Sabías?** In Salamanca, students who graduated used to celebrate by painting their names on the university walls in red paint. Some of those painted names are still there, hundreds of years later.",
+  teacher: {
+    snags: [
+      ["Task 2", "Picks *caminan* for *Mis amigos y yo*", "Who is in the group? If *yo* is in it, what pronoun is that?"],
+      ["Task 4", "Writes *cantais* without the accent", "The yellow box means only an accent mark is missing. Which ending has one?"],
+      ["Task 5", "Uses the *necesita* tile", "Is *mis padres* one person or more?"],
+      ["Task 6", "Uses *jugar* for *play the guitar*", "Look at the flashcards: which verb means *to play an instrument*?"]
+    ],
+    factcheck: "Salamanca's university dates from 1218 (Alfonso IX of León). The frog on the façade of the Escuelas Mayores and the student tradition of finding it are well documented. Red *vítores* (graduation inscriptions) are on many university walls."
+  }
+};

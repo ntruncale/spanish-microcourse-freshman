@@ -1,0 +1,148 @@
+module.exports = {
+  num: 18, unit: 4, slug: "m18-e-ie", minutes: 45,
+  title: "Verbos con cambio: e → ie",
+  subtitle: "Stem-changing \"boot\" verbs like querer and preferir",
+  lede: "Some verbs change a vowel in their stem: *querer* becomes *quiero*. The change happens in four forms, and they make the shape of a boot.",
+  recap: "Last time you learned **ir** (*voy, vas, va…*), **al** = *a + el*, and **ir a** + infinitive for plans: *Voy a estudiar.*",
+  context: {
+    title: "El gol de Iniesta",
+    place: "Johannesburgo, Sudáfrica",
+    text: `On **July 11, 2010**, Spain played the Netherlands in the final of the World Cup in Johannesburg. Spain had never won it. After 90 minutes, the score was 0–0. In the 116th minute, the midfielder **Andrés Iniesta** received the ball near the goal and kicked it in. Spain won 1–0.
+
+When Iniesta ran to celebrate, he pulled off his jersey. On the shirt underneath he had written a message for his friend **Dani Jarque**, a player who had died suddenly the year before: *Dani Jarque siempre con nosotros* ("Dani Jarque, always with us").
+
+Millions of Spaniards celebrated in the streets. Before the game, many fans had been saying: {{Queremos ganar. Pensamos que es posible.}} *We want to win. We think it's possible.* Look at *queremos* and *quiero*: same verb, but the stem changes. That's this module.`
+  },
+  learn: [
+    {
+      title: "The boot",
+      text: `In **stem-changing verbs**, the **e** in the stem becomes **ie** in every form **except** *nosotros* and *vosotros*. Picture the table: the forms that change make the shape of a **boot**.`,
+      conj: [
+        { inf: "querer", en: "to want, to love", forms: ["qu**ie**ro", "qu**ie**res", "qu**ie**re", "queremos", "queréis", "qu**ie**ren"], caption: "The bold forms are inside the boot." },
+        { inf: "preferir", en: "to prefer", forms: ["pref**ie**ro", "pref**ie**res", "pref**ie**re", "preferimos", "preferís", "pref**ie**ren"] }
+      ],
+      tip: "The endings are the normal -ar, -er or -ir endings. Only the stem changes. In *preferir*, it's the **second** e (pre-**fe**-rir) that changes, the one right before the ending."
+    },
+    {
+      title: "Common e → ie verbs",
+      flash: [
+        ["querer", "to want, to love"], ["preferir", "to prefer"], ["pensar", "to think; to plan to"], ["empezar", "to begin"], ["comenzar", "to begin"],
+        ["entender", "to understand"], ["cerrar", "to close"], ["perder", "to lose, to miss"], ["tener (tengo)", "to have"], ["venir (vengo)", "to come"]
+      ],
+      tip: "**Tener** and **venir** are e → ie verbs too, but their *yo* forms are irregular: {{tengo}}, {{vengo}}. *Venir*: vengo, vienes, viene, venimos, venís, vienen."
+    },
+    {
+      title: "Verb + infinitive",
+      text: `Like *tener que* and *ir a*, many of these verbs can be followed by an infinitive.`,
+      examples: [
+        ["Quiero ganar el partido.", "I want to win the game."],
+        ["¿Prefieres jugar o mirar?", "Do you prefer to play or to watch?"],
+        ["Pensamos viajar a España.", "We're planning to travel to Spain."],
+        ["La clase empieza a las ocho.", "Class begins at eight."],
+        ["Empiezo a entender.", "I'm beginning to understand."]
+      ],
+      tip: "**Empezar a** + infinitive: *empiezo **a** entender*. And *pensar* + infinitive means *to plan to*."
+    }
+  ],
+  tasks: [
+    {
+      id: "t1", type: "conj", title: "Conjugate two verbs",
+      intro: "Write every form. Change e → ie inside the boot only.",
+      pick: 2,
+      verbs: [
+        { inf: "pensar", en: "to think", forms: ["pienso", "piensas", "piensa", "pensamos", "pensáis", "piensan"] },
+        { inf: "cerrar", en: "to close", forms: ["cierro", "cierras", "cierra", "cerramos", "cerráis", "cierran"] },
+        { inf: "entender", en: "to understand", forms: ["entiendo", "entiendes", "entiende", "entendemos", "entendéis", "entienden"] },
+        { inf: "perder", en: "to lose", forms: ["pierdo", "pierdes", "pierde", "perdemos", "perdéis", "pierden"] },
+        { inf: "empezar", en: "to begin", forms: ["empiezo", "empiezas", "empieza", "empezamos", "empezáis", "empiezan"] }
+      ],
+      hints: ["Only yo, tú, él/ella/usted and ellos/ellas/ustedes change.", "*Nosotros* and *vosotros* keep the **e**: *pensamos*, *pensáis*.", "In *entender* and *empezar*, the **second** e changes: *ent**ie**ndo*, *emp**ie**zo*."]
+    },
+    {
+      id: "t2", type: "sort", title: "Inside or outside the boot?",
+      intro: "Tap 🔊 to hear each form. Does the stem change?",
+      cats: ["e → ie", "no change"], speak: true,
+      items: [["quiero", 0], ["queremos", 1], ["piensas", 0], ["pensamos", 1], ["entienden", 0], ["entendéis", 1], ["prefiere", 0], ["preferimos", 1], ["empiezo", 0], ["empezamos", 1]],
+      hints: ["The *nosotros* and *vosotros* forms are outside the boot."]
+    },
+    {
+      id: "t3", type: "select", title: "Choose the right form",
+      intro: "Tap the form that matches the subject.",
+      items: [
+        { s: "Yo {quiero|quero|queremos} ganar." }, { s: "Nosotros {queremos|quieremos|quieren} un perro." }, { s: "¿Tú {prefieres|preferes|prefiero} el fútbol o el béisbol?" },
+        { s: "El partido {empieza|empeza|empiezan} a las ocho." }, { s: "Mis amigos {piensan|pensan|pensamos} ir al cine." }, { s: "¿{Entendéis|Entiendéis|Entienden} la pregunta, chicos?" },
+        { s: "Yo {tengo|tieno|tenemos} dos hermanos." }, { s: "Mi equipo nunca {pierde|perde|pierden}." }
+      ],
+      hints: ["Outside the boot (nosotros, vosotros) there's no **ie**."]
+    },
+    {
+      id: "t4", type: "cloze", title: "Complete the sentences",
+      intro: "Write the correct form of the verb in parentheses.",
+      pick: 8,
+      items: [
+        "España [quiere] ((querer)) ganar la Copa.", "Yo [prefiero] ((preferir)) jugar al fútbol.", "¿A qué hora [empieza] ((empezar)) la clase?", "Nosotros [pensamos] ((pensar)) viajar en el verano.",
+        "Mis padres [cierran] ((cerrar)) la tienda a las siete.", "Tú [entiendes] ((entender)) muy bien.", "Ustedes [pierden] ((perder)) el autobús.", "Vosotros [queréis] ((querer)) comer.",
+        "Yo [vengo] ((venir)) a la escuela en autobús.", "Mi abuela [viene] ((venir)) a cenar el domingo."
+      ],
+      hints: ["Check: is the subject inside or outside the boot?", "*Venir* has an irregular *yo* form: **vengo**."]
+    },
+    {
+      id: "t5", type: "dictation", title: "Listen and write",
+      intro: "Write each sentence you hear.",
+      pick: 4,
+      items: ["Quiero ganar.", "¿Qué prefieres?", "No entiendo la pregunta.", "Empezamos a las nueve.", "Ellos piensan que sí.", "Cierra la puerta, por favor."],
+      hints: ["Listen for **ie** in the stem."]
+    },
+    {
+      id: "t6", type: "errors", title: "Fix the mistakes",
+      intro: "Tap the wrong word, then type the correct form.",
+      items: [
+        { s: "Nosotros quieremos ir a la playa.", bad: "quieremos", fix: "queremos", why: "Nosotros is outside the boot." },
+        { s: "Ella prefere el chocolate.", bad: "prefere", fix: "prefiere" },
+        { s: "Yo no entendo.", bad: "entendo", fix: "entiendo" },
+        { s: "La película empeza a las siete.", bad: "empeza", fix: "empieza" },
+        { s: "Yo teno un gato.", bad: "teno", fix: "tengo" }
+      ],
+      hints: ["Inside the boot: **ie**. Outside: **e**. And *tener* → *tengo*."]
+    },
+    {
+      id: "s1", type: "speak", title: "Say it out loud",
+      intro: "Listen, record, compare.",
+      items: [{ s: "¿Qué quieres hacer? Prefiero jugar al fútbol." }, { s: "No entiendo, pero empiezo a entender." }]
+    }
+  ],
+  build: {
+    heading: "Lo que quiero",
+    prompt: `Write **at least 5 sentences** about what you and others want, prefer and plan to do this year. Use at least **three different e → ie verbs**, at least one **nosotros** form (which doesn't change), and at least one verb followed by an **infinitive**.`,
+    model: `{{Este año quiero aprender a tocar la guitarra.}} {{Mi hermana prefiere el piano.}} {{Mis amigos y yo pensamos ir a un concierto en mayo.}} {{El concierto empieza a las ocho.}} {{Mis padres quieren ir también.}} {{¡Nosotros queremos bailar!}}`,
+    placeholder: "Este año quiero…",
+    reqs: [
+      { t: "At least 5 sentences", sentences: 5 },
+      { t: "Three different e → ie verbs", min: 3, any: ["quiero", "quieres", "quiere", "queremos", "queréis", "quieren", "prefiero", "prefieres", "prefiere", "preferimos", "preferís", "prefieren", "pienso", "piensas", "piensa", "pensamos", "pensáis", "piensan", "empiezo", "empiezas", "empieza", "empezamos", "empezáis", "empiezan", "comienzo", "comienza", "comenzamos", "comienzan", "entiendo", "entiendes", "entiende", "entendemos", "entienden", "cierro", "cierra", "cerramos", "cierran", "pierdo", "pierdes", "pierde", "perdemos", "pierden", "vengo", "vienes", "viene", "venimos", "vienen"] },
+      { t: "A **nosotros** form", any: ["queremos", "preferimos", "pensamos", "empezamos", "comenzamos", "entendemos", "cerramos", "perdemos", "venimos", "tenemos"] },
+      { t: "A verb + infinitive", re: "\\b(quiero|quieres|quiere|queremos|queréis|quieren|prefiero|prefieres|prefiere|preferimos|prefieren|pienso|piensas|piensa|pensamos|piensan)\\s+\\p{L}+(ar|er|ir)\\b" }
+    ]
+  },
+  reflect: {
+    q: "At the biggest moment of his career, Iniesta remembered a friend who had died. When something good happens to you, who do you want to share it with or thank? Why that person?",
+    placeholder: "When something good happens, I want to tell…"
+  },
+  further: {
+    id: "x1", type: "translate", title: "Challenge: translate",
+    items: [
+      { en: "I want to win.", es: ["[yo] quiero ganar"] },
+      { en: "Do you (tú) understand?", es: ["¿[tú] entiendes?", "¿[tú] comprendes?"] },
+      { en: "We prefer to stay home.", es: ["[nosotros] preferimos estar en casa", "[nosotras] preferimos estar en casa", "[nosotros] preferimos quedarnos en casa", "[nosotras] preferimos quedarnos en casa"] },
+      { en: "The game begins at three.", es: ["el partido {empieza|comienza} a las tres"] }
+    ]
+  },
+  culture: "**¿Sabías?** In Spanish, **querer** means both *to want* and *to love* (a person): {{Te quiero}} means *I love you*, said to family and friends.",
+  teacher: {
+    snags: [
+      ["Task 1", "Changes the nosotros form", "Draw the boot: which forms are outside it?"],
+      ["Task 1", "Changes the first e in *entender*", "It's the e closest to the ending that changes: *ent**ie**ndo*."],
+      ["Task 4", "*veno*", "*Venir* has an irregular yo form like *tener*: *vengo*."]
+    ],
+    factcheck: "2010 FIFA World Cup final, July 11, 2010, Soccer City, Johannesburg: Spain 1–0 Netherlands, Iniesta goal in the 116th minute. His undershirt read \"Dani Jarque siempre con nosotros\" (Jarque, Espanyol captain, died August 8, 2009)."
+  }
+};

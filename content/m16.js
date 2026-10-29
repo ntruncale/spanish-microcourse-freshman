@@ -1,0 +1,161 @@
+module.exports = {
+  num: 16, unit: 3, slug: "m16-ser-estar", minutes: 45,
+  title: "Ser y estar",
+  subtitle: "Choosing the right *to be*",
+  lede: "Two verbs, one English meaning. *Ser* tells what something **is**; *estar* tells where it is and how it **is doing**. Choosing the right one can change what you mean.",
+  recap: "You've learned both verbs: **ser** (*soy, eres, es, somos, sois, son*) in Module 8, and **estar** (*estoy, estás, está, estamos, estáis, están*) last time.",
+  context: {
+    title: "Caminante, no hay camino",
+    place: "Soria, Castilla y León",
+    text: `In 1912 the poet **Antonio Machado** published *Campos de Castilla* (*Fields of Castile*), poems written while he taught French at a high school in the small city of Soria. In a new edition in **1917**, he added a set of very short poems. One of them became one of the most quoted lines in the Spanish language:
+
+{{Caminante, no hay camino, se hace camino al andar.}}
+
+*Traveler, there is no road; you make the road by walking.*
+
+Machado's idea fits this module. Some things describe who you **are**, like where you're from or what you're like: that's **ser**. Others describe where you **are** on the road right now, and how you feel along the way: that's **estar**. {{Soy estudiante. Estoy en el camino.}}`
+  },
+  learn: [
+    {
+      title: "Ser or estar? Two memory tricks",
+      text: `**Ser** is for what something *is*: think **DOCTOR**. **Estar** is for where and how something is: think **PLACE**. ("How you feel and where you are, that's when you use estar.")`,
+      table: {
+        head: ["SER · DOCTOR", "ESTAR · PLACE"],
+        rows: [
+          ["**D**escription: {{Es alto.}}", "**P**osition: {{Está sentado.}} (seated)"],
+          ["**O**ccupation: {{Soy estudiante.}}", "**L**ocation: {{Estoy en Soria.}}"],
+          ["**C**haracteristic: {{Es simpática.}}", "**A**ction in progress: {{Estoy estudiando.}} (Module 24)"],
+          ["**T**ime and date: {{Son las tres.}}", "**C**ondition: {{La sopa está fría.}}"],
+          ["**O**rigin: {{Somos de Ohio.}}", "**E**motion: {{Están contentos.}}"],
+          ["**R**elationship: {{Es mi tía.}}", ""]
+        ]
+      }
+    },
+    {
+      title: "Same adjective, different meaning",
+      text: `Some adjectives mean something different with each verb. **Ser** describes what someone is like; **estar** describes how they are at the moment.`,
+      table: {
+        head: ["with SER", "with ESTAR"],
+        rows: [
+          ["{{Es aburrido.}} He's boring.", "{{Está aburrido.}} He's bored."],
+          ["{{Es listo.}} He's clever.", "{{Está listo.}} He's ready."],
+          ["{{Es malo.}} He's bad (a bad person).", "{{Está malo.}} He's sick. (food: it tastes bad)"],
+          ["{{Es rico.}} He's rich.", "{{Está rico.}} It's delicious."],
+          ["{{Es nervioso.}} He's a nervous person.", "{{Está nervioso.}} He's nervous right now."]
+        ]
+      }
+    },
+    {
+      title: "Events use ser",
+      text: `Location usually takes **estar**, but an **event** (a party, a game, a concert, a class) uses **ser** to say where and when it *takes place*.`,
+      examples: [
+        ["Mi casa está en la calle Mayor.", "My house is on Main Street. (location: estar)"],
+        ["La fiesta es en mi casa.", "The party is at my house. (event: ser)"],
+        ["¿Dónde es el partido? Es en el estadio.", "Where is the game? It's at the stadium."],
+        ["La mesa es de madera.", "The table is (made of) wood. (material: ser)"]
+      ]
+    }
+  ],
+  tasks: [
+    {
+      id: "t1", type: "sort", title: "Ser or estar?",
+      intro: "Which verb belongs in the blank?",
+      cats: ["ser", "estar"], pick: 10,
+      items: [
+        ["Mi madre ___ doctora.", 0, "Occupation: **ser**."], ["Nosotros ___ en la biblioteca.", 1, "Location: **estar**."], ["Hoy ___ martes.", 0, "Day and date: **ser**."],
+        ["Ellos ___ muy cansados.", 1, "Condition: **estar**."], ["Machado ___ de Sevilla.", 0, "Origin: **ser**."], ["La sopa ___ fría.", 1, "Condition right now: **estar**."],
+        ["Ana ___ mi prima.", 0, "Relationship: **ser**."], ["Yo ___ contento hoy.", 1, "Emotion: **estar**."], ["La fiesta ___ en mi casa.", 0, "An event: **ser**."],
+        ["Mi casa ___ cerca de la escuela.", 1, "Location of a thing: **estar**."], ["___ las dos de la tarde.", 0, "Time: **ser**."], ["Tú ___ muy alto.", 0, "Description: **ser**."]
+      ],
+      hints: ["DOCTOR → ser: Description, Occupation, Characteristic, Time, Origin, Relationship.", "PLACE → estar: Position, Location, Action, Condition, Emotion.", "Events (parties, games) use **ser** for where they happen."]
+    },
+    {
+      id: "t2", type: "select", title: "Choose the right form",
+      intro: "Choose the correct form of *ser* or *estar*.",
+      items: [
+        { s: "Yo {soy|estoy|es} de Pensilvania." }, { s: "Mis amigos {están|son|estamos} en el parque." }, { s: "¿Cómo {estás|eres|está} hoy?" },
+        { s: "Nosotros {somos|estamos|son} hermanos." }, { s: "La clase {es|está|son} a las nueve." }, { s: "El concierto {es|está|están} en el teatro." },
+        { s: "Uf, {estoy|soy|está} muy aburrido en esta clase.", en: "Ugh, I'm so bored in this class." }, { s: "Mi abuelo {es|está|eres} muy simpático." }
+      ],
+      hints: ["*¿Cómo estás?* asks how you feel; *¿Cómo eres?* asks what you're like.", "Events (*el concierto*) use **ser**."]
+    },
+    {
+      id: "t3", type: "cloze", title: "Complete the postcard",
+      intro: "Write the correct form of *ser* or *estar*.",
+      items: [
+        "¡Hola, Sara! Yo [estoy] en Soria con mi familia.", "Soria [es] una ciudad pequeña y bonita.", "Nuestro hotel [está] cerca del río.",
+        "Hoy [es] sábado y [son] las cinco.", "Mis padres [están] muy contentos.", "Mi hermano [está] cansado porque caminamos mucho.", "La comida aquí [es|está] deliciosa.", "¡Tú [eres] mi mejor amiga!"
+      ],
+      hints: ["Where someone is → **estar**. What a place is like → **ser**.", "*La comida es deliciosa* (in general) or *está deliciosa* (this meal): both are correct!"]
+    },
+    {
+      id: "t4", type: "match", title: "Same word, new meaning",
+      intro: "Match each sentence (tap to hear it) with its meaning.",
+      pairs: [["Es aburrido.", "He's boring."], ["Está aburrido.", "He's bored."], ["Es listo.", "He's clever."], ["Está listo.", "He's ready."], ["Es rico.", "He's rich."], ["La sopa está rica.", "The soup is delicious."], ["Es malo.", "He's a bad person."], ["Está malo.", "He's sick."]],
+      hints: ["**Ser** = what someone is like. **Estar** = how they are right now."]
+    },
+    {
+      id: "t5", type: "errors", title: "Fix the mistakes",
+      intro: "Each sentence uses the wrong verb. Tap it, then write the right form.",
+      items: [
+        { s: "Mi padre está profesor.", bad: "está", fix: "es", why: "Occupation: **ser**." },
+        { s: "Yo soy en la cafetería.", bad: "soy", fix: "estoy", why: "Location: **estar**." },
+        { s: "Ellas son muy cansadas hoy.", bad: "son", fix: "están", why: "A condition today: **estar**." },
+        { s: "La fiesta está en el gimnasio.", bad: "está", fix: "es", why: "An event: **ser**." },
+        { s: "Hoy está lunes.", bad: "está", fix: "es", why: "Days and dates: **ser**." }
+      ],
+      hints: ["Ask: DOCTOR or PLACE?"]
+    },
+    {
+      id: "t6", type: "listen", title: "Why that verb?",
+      intro: "Listen to each sentence. Why does it use *ser* or *estar*?",
+      questions: [
+        { say: "Mi tía es enfermera en un hospital.", choices: [["occupation (ser)", true], ["location (estar)", false], ["emotion (estar)", false], ["time (ser)", false]] },
+        { say: "Estamos en la playa.", choices: [["location (estar)", true], ["origin (ser)", false], ["description (ser)", false], ["condition (estar)", false]] },
+        { say: "El concierto es en el estadio.", choices: [["an event (ser)", true], ["location of a thing (estar)", false], ["emotion (estar)", false], ["origin (ser)", false]] },
+        { say: "¡Qué rica está la paella!", choices: [["how it tastes right now (estar)", true], ["it's expensive (ser)", false], ["where it is (estar)", false], ["what it's made of (ser)", false]] }
+      ],
+      hints: ["DOCTOR for *ser*, PLACE for *estar*, and events take *ser*."]
+    },
+    {
+      id: "s1", type: "speak", title: "Machado's line",
+      intro: "Listen to the famous line, then record yourself saying it.",
+      items: [{ s: "Caminante, no hay camino, se hace camino al andar." }, { s: "Soy de Scranton, pero ahora estoy en Madrid." }]
+    }
+  ],
+  build: {
+    heading: "Una postal",
+    prompt: `Write a postcard (**at least 6 sentences**) to a friend from a real or imagined trip. Say where you are, what the place is like, who you're with and how everyone feels. Use **ser** at least twice and **estar** at least twice.`,
+    model: `{{¡Hola, Marcos!}} {{Estoy en Sevilla con mi familia.}} {{Sevilla es una ciudad muy bonita y antigua.}} {{Nuestro hotel está cerca de la catedral.}} {{Hoy es domingo y hace mucho calor.}} {{Mis padres están contentos, pero mi hermana está cansada.}} {{¡La comida es deliciosa!}} {{Hasta pronto, Ana}}`,
+    placeholder: "¡Hola…! Estoy en…",
+    reqs: [
+      { t: "At least 6 sentences", sentences: 6 },
+      { t: "**ser** at least twice", re: "\\b(soy|eres|es|somos|sois|son)\\b", min: 2 },
+      { t: "**estar** at least twice", re: "\\b(estoy|estás|está|estamos|estáis|están)\\b", min: 2 },
+      { t: "Where you are (*estoy en…*)", re: "\\b(estoy|estamos)\\s+en\\b" },
+      { t: "A feeling with estar", re: "\\b(estoy|estás|está|estamos|estáis|están)\\s+(muy\\s+|un\\s+poco\\s+)?(content|trist|cansad|enferm|nervios|aburrid|enojad|preocupad|ocupad|emocionad|tranquil|bien|mal)\\p{L}*" }
+    ]
+  },
+  reflect: {
+    q: "Machado wrote that we make our road by walking. Think of one thing about who you **are** (*ser*) that you hope never changes, and one thing about where you **are** right now (*estar*) that you hope will change or grow this year.",
+    placeholder: "Something about who I am… Something about where I am right now…"
+  },
+  further: {
+    id: "x1", type: "translate", title: "Challenge: choose and translate",
+    items: [
+      { en: "I'm ready.", es: ["[yo] estoy {listo|lista}"] },
+      { en: "She's clever.", es: ["[ella] es lista"] },
+      { en: "The game is at the school.", es: ["el partido es en la escuela"] },
+      { en: "We're from Spain, but we're in Mexico.", es: ["[nosotros] somos de españa pero estamos en méxico", "[nosotras] somos de españa pero estamos en méxico"] }
+    ]
+  },
+  culture: "**¿Sabías?** Machado's line became famous all over again in 1969, when the Catalan singer **Joan Manuel Serrat** put the poem to music in the song *Cantares*.",
+  teacher: {
+    snags: [
+      ["Task 1", "*La fiesta está en mi casa*", "Is the party a thing sitting in a place, or an event that takes place?"],
+      ["Task 2", "*¿Cómo eres hoy?*", "Are we asking what someone is like, or how they feel today?"],
+      ["Task 3", "*La comida es / está*", "Both are accepted; ask the student which meaning they chose."]
+    ],
+    factcheck: "Machado taught French at the Instituto de Soria from 1907; *Campos de Castilla* was first published in 1912. The \"Caminante, no hay camino\" lines are from \"Proverbios y cantares\" XXIX, included in the 1917 expanded edition of *Campos de Castilla*. Serrat's album *Dedicado a Antonio Machado, poeta* (1969) includes *Cantares*."
+  }
+};
